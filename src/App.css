@@ -1,0 +1,106 @@
+.App {
+  height: 210vh;
+  width: 100vw;
+  display: flex;
+} 
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+#set-height {
+  display: block;
+}
+#v0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60%;
+}
+
+#scene {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 50vw;
+}
+
+.viewer{
+  position: fixed;
+  height: 100vh;
+  width: 50vw;
+  z-index: 10;
+  background-size: 6380px 6380px;
+  background-image: url('./Pill.png');
+  background-repeat: no-repeat;
+  background-position: top;
+
+  /* transform: translate(20%, -20%); */
+
+
+
+}
+
+.contentBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin-left: 1rem;
+  z-index: -10;
+  margin-top: 3.6rem;
+  background-size: 96vw 105vh;
+  background-image: url('./assets/BG.png');
+  background-repeat: no-repeat;
+}
+
+.eclip {
+  /* display: flex; */
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  background-repeat: no-repeat;
+  margin-top: 2rem;
+  padding: 14rem;
+  background-size: 100% 100%;
+  background-image: url('./assets/eclipseGrp.png');
+}
+
+.lves{
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: -0.5;
+  background-repeat: no-repeat;
+  margin-top: 7.5rem;
+  padding: 16rem;
+}
+
+.natEssen{
+  position: absolute;
+  flex-direction: column;
+  margin-left: 21rem;
+  z-index: -0.5;
+  background-repeat: no-repeat;
+  margin-top: 6rem;
+  /* padding: 3rem; */
+}
+
+.natText{
+  display: flex;
+  position: absolute;
+  z-index: 0;
+  
+  background-repeat: no-repeat;
+  margin-top: 6rem;
+  /* padding: 3rem; */
+}
+
+
