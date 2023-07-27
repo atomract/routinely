@@ -12,7 +12,9 @@ function App() {
 
   return (
     <div className='App'>
-      <Navbar/>
+      <div className='bg-white/[0.5]'>
+        <Navbar/>
+      </div>
       <CapsuleSection/>
     </div>
    

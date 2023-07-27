@@ -1,5 +1,5 @@
 .App {
-  height: 210vh;
+  height: 200vh;
   width: 100vw;
   display: flex;
 } 
@@ -31,7 +31,7 @@
   position: fixed;
   height: 100vh;
   width: 50vw;
-  z-index: 10;
+  z-index: 20;
   background-size: 6380px 6380px;
   background-image: url('./Pill.png');
   background-repeat: no-repeat;
@@ -48,8 +48,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  height: 100vh;
+  width: 96vw;
+  height: 93vh;
   margin-left: 1rem;
   z-index: -10;
   margin-top: 3.6rem;
@@ -67,9 +67,34 @@
   z-index: 0;
   background-repeat: no-repeat;
   margin-top: 2rem;
-  padding: 14rem;
+  padding: 16rem;
   background-size: 100% 100%;
   background-image: url('./assets/eclipseGrp.png');
+}
+
+.eclip {
+  /* display: flex; */
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  background-repeat: no-repeat;
+  margin-top: 2rem;
+  padding: 16rem;
+  background-size: 100% 100%;
+  background-image: url('./assets/eclipseGrp.png');
+}
+
+.eclip1 {
+  /* display: flex; */
+  position: absolute;
+  z-index: 0;
+  background-repeat: no-repeat;
+  /* padding: 16rem; */
+  margin-bottom: -25rem;
+  background-size: 100% 100%;
+  background-image: url('./assets/Ellipse1150.png');
 }
 
 .lves{
