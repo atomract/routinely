@@ -11,6 +11,8 @@ const CapsuleSection = () => {
 
     const vidRef = useRef(null);
     const setHeightRef = useRef(null);
+    const timeline = useRef(gsap.timeline({paused: true}))
+
   
     gsap.registerPlugin(ScrollTrigger);
   
@@ -24,8 +26,29 @@ const CapsuleSection = () => {
       const horizDiff = imageWidth / columns;
       const vertDiff = imageHeight / rows;
       var offset_v = 100
+      timeline.current.from(vidRef.current, {
+        opacity: 1,
+        x: '10%',
+        scrollTrigger: { 
+          trigger: vidRef.current,
+          id: 'project-pin-1',
+          start: "top 20%",
+          end: "bottom -50%",
+          scrub: 1.5,
+          pin: true,
+        //   markers: true,
+          toggleActions: 'play none none reverse'
+        }
+      })
+    .to(vidRef.current, {
+      opacity: 1,
+    }, ">")
+
+      // const vidRef = document.querySelectorAll(".anim_item");
+
+
       gsap.set(".viewer", { width: horizDiff, height: vertDiff });
-  
+      
       const setPos = gsap.quickSetter(".viewer", 'background-position');
   
       const obj = { num: 0 };
@@ -106,6 +129,11 @@ const CapsuleSection = () => {
             <div className='contentBox'>
             <img className='eclip' />
             <img src={Levs} width={'90%'} className='lves ml-10'/>
+            <div className='-z-5' ref={vidRef}>
+              <span className='anim_item'>
+                <p className='strk-3 text-7xl font-bold tracking-wider'>Elevate Your Wellness <span className='font-extrabold strk-0'>Journey</span></p>
+              </span>
+            </div>
               <div id='scene'>
 
                 <div className='viewer'>

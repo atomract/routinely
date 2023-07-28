@@ -129,3 +129,18 @@
 }
 
 
+.strk-3 {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  -webkit-text-fill-color: transparent;
+}
+
+.strk-0 {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  -webkit-text-fill-color: white;
+}
+
+
+
+

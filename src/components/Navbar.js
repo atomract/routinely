@@ -3,9 +3,9 @@ import Logo from '../assets/Logo.png'
 
 const Navbar = () => {
   return (
-    <nav className='bg-white'>
-          <div className="bg-white fixed w-full z-30 top-0 left-0">
-        <div className="max-w-screen-xl bg-white flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav className=''>
+          <div className="bg-whiteFont fixed w-full z-30 top-0 left-0">
+        <div className="max-w-screen-xl bg-white flex flex-wrap items-center justify-between mx-auto p-2">
         <a href="" className="flex items-center">
             <span className="self-center text-xl text-tintFont font-semibold whitespace-nowrap ">Discover</span>
         </a>
