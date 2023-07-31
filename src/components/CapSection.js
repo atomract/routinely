@@ -6,6 +6,7 @@ import Time1 from '../assets/time1.png'
 import Levs1 from '../assets/leaves1.png'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
+import { useScroll, animated } from '@react-spring/web'
 
 const CapsuleSection = () => {
 
@@ -13,6 +14,7 @@ const CapsuleSection = () => {
     const setHeightRef = useRef(null);
     const timeline = useRef(gsap.timeline({paused: true}))
     const [bgX, setBgX] = useState(0)
+    const { scrollYProgress } = useScroll()
   
     gsap.registerPlugin(ScrollTrigger);
 
@@ -187,7 +189,7 @@ const CapsuleSection = () => {
             </div>
       </div>
       <div className='h-max'>
-        
+      <animated.div style={{ opacity: scrollYProgress }}>
         <div className='flex flex-row place-content-end' id='crvTrigger'>
           <div className='eclip1 w-80 mt-4 mx-5'  id='crvTrigger-element'>
             <span className='flex flex-row'>
@@ -197,6 +199,8 @@ const CapsuleSection = () => {
               <p className='text-tintFont text-[10px] font-normal mt-1'>Our trademarked technology combines oily and dry ingredients in a single capsule, including incompatible ingredients like Fat and Water soluble Vitamins and Minerals. Intake all key nutrients with just 1 pill a day.</p>
           </div>
         </div>
+        </animated.div>
+        <animated.div style={{ opacity: scrollYProgress }}>
 
         <div className='flex flex-row' id='crvTrigger'>
           <div className='eclip1 w-80 mt-40 mx-5' id='crvTrigger-element'>
@@ -207,7 +211,8 @@ const CapsuleSection = () => {
               <p className='text-tintFont text-[10px] font-normal mt-1 mx-2'>Our delayed-release capsules dissolve in the small intestine, where nutrient absorption is most effective.</p>
           </div>
         </div>
-
+        </animated.div>
+        <animated.div style={{ opacity: scrollYProgress }}>
         <div className='flex flex-row place-content-end mb-20' id='crvTrigger'>
           <div className='eclip1 w-80 mt-72 mx-5' id='crvTrigger-element'>
             <span className='flex flex-row' id=''>
@@ -217,6 +222,7 @@ const CapsuleSection = () => {
               <p className='text-tintFont text-[10px] font-normal mt-1 mx-2'>Our delayed-release capsules dissolve in the small intestine, where nutrient absorption is most effective.</p>
           </div>
         </div>
+        </animated.div>
         
       </div>
     </div>
