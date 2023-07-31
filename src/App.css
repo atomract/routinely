@@ -104,9 +104,21 @@
   justify-content: center;
   z-index: -0.5;
   background-repeat: no-repeat;
-  margin-top: 7.5rem;
+  /* margin-top: 7.5rem; */
   padding: 16rem;
 }
+
+.lves2{
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: -0.5;
+  background-repeat: no-repeat;
+  /* margin-top: 7.5rem; */
+  /* padding: 16rem; */
+}
+
 
 .natEssen{
   position: absolute;
@@ -114,7 +126,7 @@
   margin-left: 21rem;
   z-index: -0.5;
   background-repeat: no-repeat;
-  margin-top: 6rem;
+  /* margin-top: 6rem; */
   /* padding: 3rem; */
 }
 
@@ -122,9 +134,9 @@
   display: flex;
   position: absolute;
   z-index: 0;
-  
+  margin-bottom: 6rem;
   background-repeat: no-repeat;
-  margin-top: 6rem;
+  /* margin-top: 6rem; */
   /* padding: 3rem; */
 }
 

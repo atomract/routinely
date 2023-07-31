@@ -160,7 +160,7 @@ const CapsuleSection = () => {
                   <source type='video/mp4' src={Vdeo}></source>
                 </video> */}
               </div>
-              <div className='lves'>
+              <div className='lves2'>
               <svg xmlns="http://www.w3.org/2000/svg" className='natEssen' width="193" height="90.5" viewBox="0 0 382 177" fill="none">
                 <path d="M0 29.9957V147.037C0 163.606 13.4314 177 30 177H282.545C299.114 177 312.545 163.569 312.545 147V142.462C312.545 125.894 325.977 112.462 342.545 112.462H352C368.569 112.462 382 99.0306 382 82.4621V30C382 13.4315 368.569 0 352 0H30C13.4315 0 0 13.4271 0 29.9957Z" fill="white"/>
               </svg>
@@ -169,16 +169,16 @@ const CapsuleSection = () => {
                     <span className='flex flex-row ml-80'>
 
                       <img src={Levs1} className='h-10' width={'60%'}/>
-                      <p className='font-bold text-tintFont whitespace-nowrap mt-1.5'>{"Nature’s Essence"}</p>
+                      <p className='font-bold text-tintFont whitespace-nowrap mt-1.5 ml-2'>{"Nature’s Essence"}</p>
                     </span>
                   </span>
                 </div>
-              </div>
-              <div className='z-0 mb-10 mt-5 ml-64 w-48'> 
-                <p className='z-0 ml-80 text-[10px] font-normal text-tintFont whitespace-nowrap mt-0'>Plant based</p>
-                <p className='z-0 ml-80 text-[10px] font-normal text-tintFont whitespace-nowrap mt-0'>Mint Enhanced</p>
-                <p className='z-0 ml-80 text-[10px] font-normal text-tintFont whitespace-nowrap mt-0'>Liquid Fill 2-  in -1 Technology</p>
+              <div className='absolute z-2 mt-9 ml-7 w-18'> 
+                <p className='z-2 ml-80 text-[10px] font-normal text-tintFont whitespace-nowrap mt-0'>Plant based</p>
+                <p className='z-2 ml-80 text-[10px] font-normal text-tintFont whitespace-nowrap mt-0'>Mint Enhanced</p>
+                <p className='z-2 ml-80 text-[10px] font-normal text-tintFont whitespace-nowrap mt-0'>Liquid Fill 2-  in -1 Technology</p>
 
+              </div>
               </div>
                 
 
