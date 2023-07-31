@@ -139,7 +139,7 @@ const CapsuleSection = () => {
   
 
     return (
-      <div>
+      <div className='gap-y-10'>
           <div className='place-content-center'>
             <div className='contentBox'>
             <img className='eclip' />
@@ -187,7 +187,7 @@ const CapsuleSection = () => {
       <div className='h-max'>
         
         <div className='flex flex-row place-content-end' id='crvTrigger'>
-          <div className='eclip1 w-80 mt-32 mx-5'  id='crvTrigger-element'>
+          <div className='eclip1 w-80 mt-4 mx-5'  id='crvTrigger-element'>
             <span className='flex flex-row'>
               <img src={Cap1} width={'10%'} className='h-7 mt-3'/>
               <p className='text-tintFont text-xl font-semibold'>Unique Capsule in Capsule, 2-IN-1 Technology</p>
@@ -197,7 +197,7 @@ const CapsuleSection = () => {
         </div>
 
         <div className='flex flex-row' id='crvTrigger'>
-          <div className='eclip1 w-80 mt-60 mx-5' id='crvTrigger-element'>
+          <div className='eclip1 w-80 mt-40 mx-5' id='crvTrigger-element'>
             <span className='flex flex-row'>
               <img src={Time1} width={'10%'} className='h-6 mx-3'/>
               <p className='text-tintFont text-xl font-semibold'>Delayed Release Technology</p>
@@ -206,10 +206,10 @@ const CapsuleSection = () => {
           </div>
         </div>
 
-        <div className='flex flex-row place-content-end' id='crvTrigger'>
-          <div className='eclip1 w-80 mt-96 mx-5' id='crvTrigger-element'>
+        <div className='flex flex-row place-content-end mb-20' id='crvTrigger'>
+          <div className='eclip1 w-80 mt-72 mx-5' id='crvTrigger-element'>
             <span className='flex flex-row' id=''>
-              <img src={Cap2} width={'10%'} className='h-6 mx-3'/>
+              <img src={Cap2} width={'15%'} className='h-6 mx-1'/>
               <p className='text-tintFont text-xl font-semibold'>Liquid Fill Encapsulation with VFILL™ Technology</p>
             </span>
               <p className='text-tintFont text-[10px] font-normal mt-1 mx-2'>Our delayed-release capsules dissolve in the small intestine, where nutrient absorption is most effective.</p>
