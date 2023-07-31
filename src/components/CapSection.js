@@ -59,7 +59,7 @@ const CapsuleSection = () => {
           trigger: "#scene",
           frames: frame_count * 300,
           snap: 'frame',
-          start: 'bottom center',
+          // start: 'bottom center',
           // end: "top 500px",
           // end: imageHeight,
           // markers: true,
@@ -90,20 +90,20 @@ const CapsuleSection = () => {
   
     },[])
 
-    useEffect(() => {
-      gsap.set('#crvTrigger-element', {opacity: 0});
-        gsap.to("#crvTrigger-element", {
-        scrollTrigger: {
-          trigger: "#crvTrigger",
-          start: "center center",
-          // end: "bot",
-          pin: true,
-          // markers: true,
-          scrub: true
-        },
-        opacity: 1
-      });
-    },[])
+    // useEffect(() => {
+    //   gsap.set('#crvTrigger-element', {opacity: 0});
+    //     gsap.to("#crvTrigger-element", {
+    //     scrollTrigger: {
+    //       trigger: "#crvTrigger",
+    //       start: "center center",
+    //       // end: "bot",
+    //       pin: true,
+    //       // markers: true,
+    //       scrub: true
+    //     },
+    //     opacity: 1
+    //   });
+    // },[])
   
     // useEffect(() => {
     //   let playbackConst = 250

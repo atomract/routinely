@@ -1,5 +1,5 @@
 .App {
-  height: 200vh;
+  height: 100%;
   width: 100vw;
   display: flex;
 } 
@@ -29,7 +29,7 @@
 
 .viewer{
   position: fixed;
-  height: 100vh;
+  height: 100%;
   width: 50vw;
   z-index: 20;
   background-size: 6380px 6380px;
