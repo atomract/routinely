@@ -146,12 +146,12 @@ const CapsuleSection = () => {
           <div className='place-content-center'>
             <div className='contentBox'>
             <img className='eclip' />
-            <div onMouseMove={handleMouseMove} style={{
+            {/* <div onMouseMove={handleMouseMove} style={{
                 backgroundPositionX: bgX
-              }}>
+              }}> */}
 
               <img src={Levs}  id='levsAnim' width={'90%'} className='lves ml-10'/>
-            </div>
+            {/* </div> */}
             <div className='-z-5 ' ref={vidRef}>
               <span className='anim_item'>
                 <p className='strk-3 text-7xl font-bold tracking-wider mt-10'>Elevate Your Wellness <span className='font-extrabold strk-0'>Journey</span></p>
