@@ -57,7 +57,7 @@ const CapsuleSection = () => {
         ease: "steps(" + frame_count + ")",
         scrollTrigger: {
           trigger: "#scene",
-          frames: frame_count * 300,
+          frames: frame_count * 600,
           snap: 'frame',
           // start: 'bottom center',
           // end: "top 500px",
