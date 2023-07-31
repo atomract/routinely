@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Levs from '../assets/pngwing2.png'
 import Cap1 from '../assets/capsule1.png'
 import Cap2 from '../assets/capsule2.png'
@@ -12,9 +12,14 @@ const CapsuleSection = () => {
     const vidRef = useRef(null);
     const setHeightRef = useRef(null);
     const timeline = useRef(gsap.timeline({paused: true}))
-
+    const [bgX, setBgX] = useState(0)
   
     gsap.registerPlugin(ScrollTrigger);
+
+    const handleMouseMove = (e) => {
+      setBgX(-e.nativeEvent.offsetX);
+    };
+  
   
     useEffect(() => {
       const rows = 11;
@@ -105,13 +110,11 @@ const CapsuleSection = () => {
     //   });
     // },[])
   
-    // useEffect(() => {
-    //   let playbackConst = 250
-    //   const scrollPlay = () => {
-    //     const frameNumber = window.scrollY / playbackConst;
-    //     vidRef.current.currentTime = frameNumber;
-    //     window.requestAnimationFrame(scrollPlay);
-    //   };
+//     useEffect(() => {
+//       const el = document.getElementById("#levsAnim");
+//       document.addEventListener("mousemove", function(e){
+//       setBgX(-e.pageX + "px")
+// });
   
     //   window.requestAnimationFrame(scrollPlay);
   
@@ -143,10 +146,15 @@ const CapsuleSection = () => {
           <div className='place-content-center'>
             <div className='contentBox'>
             <img className='eclip' />
-            <img src={Levs} width={'90%'} className='lves ml-10'/>
+            <div onMouseMove={handleMouseMove} style={{
+                backgroundPositionX: bgX
+              }}>
+
+              <img src={Levs}  id='levsAnim' width={'90%'} className='lves ml-10'/>
+            </div>
             <div className='-z-5 ' ref={vidRef}>
               <span className='anim_item'>
-                <p className='strk-3 text-7xl font-bold tracking-wider mt-20'>Elevate Your Wellness <span className='font-extrabold strk-0'>Journey</span></p>
+                <p className='strk-3 text-7xl font-bold tracking-wider mt-10'>Elevate Your Wellness <span className='font-extrabold strk-0'>Journey</span></p>
               </span>
             </div>
               <div id='scene'>
