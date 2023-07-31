@@ -148,7 +148,7 @@ const CapsuleSection = () => {
             {/* </div> */}
             <div className='-z-5 ' ref={vidRef}>
               <span className='anim_item'>
-                <p className='strk-3 text-7xl font-bold tracking-wider mt-10'>Elevate Your Wellness <span className='font-extrabold strk-0'>Journey</span></p>
+                <p className='strk-3 text-7xl font-bold tracking-wider mt-20'>Elevate Your Wellness <span className='font-extrabold strk-0'>Journey</span></p>
               </span>
             </div>
               <div id='scene'>
