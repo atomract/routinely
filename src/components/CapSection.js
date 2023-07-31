@@ -110,12 +110,6 @@ const CapsuleSection = () => {
     //   });
     // },[])
   
-//     useEffect(() => {
-//       const el = document.getElementById("#levsAnim");
-//       document.addEventListener("mousemove", function(e){
-//       setBgX(-e.pageX + "px")
-// });
-  
     //   window.requestAnimationFrame(scrollPlay);
   
     //   return () => {
@@ -142,7 +136,7 @@ const CapsuleSection = () => {
   
 
     return (
-      <div className='gap-y-10'>
+      <div className=''>
           <div className='place-content-center'>
             <div className='contentBox'>
             <img className='eclip' />
