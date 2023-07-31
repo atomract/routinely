@@ -65,7 +65,7 @@
   justify-content: center;
   z-index: 0;
   background-repeat: no-repeat;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   padding: 16rem;
   background-size: 100% 100%;
   background-image: url('./assets/eclipseGrp.png');
@@ -79,7 +79,7 @@
   justify-content: center;
   z-index: 0;
   background-repeat: no-repeat;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   padding: 16rem;
   background-size: 100% 100%;
   background-image: url('./assets/eclipseGrp.png');

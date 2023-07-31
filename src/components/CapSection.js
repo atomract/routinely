@@ -146,7 +146,7 @@ const CapsuleSection = () => {
             <img src={Levs} width={'90%'} className='lves ml-10'/>
             <div className='-z-5 ' ref={vidRef}>
               <span className='anim_item'>
-                <p className='strk-3 text-7xl font-bold tracking-wider'>Elevate Your Wellness <span className='font-extrabold strk-0'>Journey</span></p>
+                <p className='strk-3 text-7xl font-bold tracking-wider mt-20'>Elevate Your Wellness <span className='font-extrabold strk-0'>Journey</span></p>
               </span>
             </div>
               <div id='scene'>
