@@ -89,6 +89,21 @@ const CapsuleSection = () => {
   
   
     },[])
+
+    useEffect(() => {
+      gsap.set('#crvTrigger-element', {opacity: 0});
+        gsap.to("#crvTrigger-element", {
+        scrollTrigger: {
+          trigger: "#crvTrigger",
+          start: "center center",
+          // end: "bot",
+          pin: true,
+          // markers: true,
+          scrub: true
+        },
+        opacity: 1
+      });
+    },[])
   
     // useEffect(() => {
     //   let playbackConst = 250
@@ -129,7 +144,7 @@ const CapsuleSection = () => {
             <div className='contentBox'>
             <img className='eclip' />
             <img src={Levs} width={'90%'} className='lves ml-10'/>
-            <div className='-z-5' ref={vidRef}>
+            <div className='-z-5 ' ref={vidRef}>
               <span className='anim_item'>
                 <p className='strk-3 text-7xl font-bold tracking-wider'>Elevate Your Wellness <span className='font-extrabold strk-0'>Journey</span></p>
               </span>
@@ -171,8 +186,8 @@ const CapsuleSection = () => {
       </div>
       <div className='h-max'>
         
-        <div className='flex flex-row place-content-end'>
-          <div className='eclip1 w-80 mt-32 mx-5'>
+        <div className='flex flex-row place-content-end' id='crvTrigger'>
+          <div className='eclip1 w-80 mt-32 mx-5'  id='crvTrigger-element'>
             <span className='flex flex-row'>
               <img src={Cap1} width={'10%'} className='h-7 mt-3'/>
               <p className='text-tintFont text-xl font-semibold'>Unique Capsule in Capsule, 2-IN-1 Technology</p>
@@ -181,8 +196,8 @@ const CapsuleSection = () => {
           </div>
         </div>
 
-        <div className='flex flex-row'>
-          <div className='eclip1 w-80 mt-60 mx-5'>
+        <div className='flex flex-row' id='crvTrigger'>
+          <div className='eclip1 w-80 mt-60 mx-5' id='crvTrigger-element'>
             <span className='flex flex-row'>
               <img src={Time1} width={'10%'} className='h-6 mx-3'/>
               <p className='text-tintFont text-xl font-semibold'>Delayed Release Technology</p>
@@ -191,9 +206,9 @@ const CapsuleSection = () => {
           </div>
         </div>
 
-        <div className='flex flex-row place-content-end'>
-          <div className='eclip1 w-80 mt-96 mx-5'>
-            <span className='flex flex-row'>
+        <div className='flex flex-row place-content-end' id='crvTrigger'>
+          <div className='eclip1 w-80 mt-96 mx-5' id='crvTrigger-element'>
+            <span className='flex flex-row' id=''>
               <img src={Cap2} width={'10%'} className='h-6 mx-3'/>
               <p className='text-tintFont text-xl font-semibold'>Liquid Fill Encapsulation with VFILL™ Technology</p>
             </span>
