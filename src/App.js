@@ -19,7 +19,7 @@ function App() {
         </div>
         <CapsuleSection/>
       </div>
-        <VideoSection/>
+        {/* <VideoSection/> */}
     </>
    
   );

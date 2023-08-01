@@ -213,7 +213,7 @@ const CapsuleSection = () => {
         </div>
         </animated.div>
         <animated.div style={{ opacity: scrollYProgress }}>
-        <div className='flex flex-row place-content-end mb-20' id='crvTrigger'>
+        <div className='flex flex-row place-content-end ' id='crvTrigger'>
           <div className='eclip1 w-80 mt-72 mx-5' id='crvTrigger-element'>
             <span className='flex flex-row' id=''>
               <img src={Cap2} width={'15%'} className='h-6 mx-1'/>
