@@ -49,8 +49,8 @@ const CapsuleSection = () => {
       const columns = 11;
       const missingImages = 3; // The number of missing images in the last row
       const frame_count = rows * columns - 1;
-      const imageWidth = 4460;
-      const imageHeight = 4460;
+      const imageWidth = 6380;
+      const imageHeight = 6380;
       const horizDiff = imageWidth / columns;
       const vertDiff = imageHeight / rows;
       var offset_v = 100
