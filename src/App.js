@@ -13,10 +13,8 @@ function App() {
 
   return (
     <>
+        <Navbar/>
       <div className='App'>
-        <div className='bg-white/[0.5]'>
-          <Navbar/>
-        </div>
         <CapsuleSection/>
       </div>
         {/* <VideoSection/> */}
