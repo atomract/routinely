@@ -6,7 +6,8 @@ import Time1 from '../assets/time1.png'
 import Levs1 from '../assets/leaves1.png'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
-import { useScroll, animated } from '@react-spring/web'
+import { useScroll, animated, useSpring } from '@react-spring/web'
+import useIntersectionObserver from '../functions/InteractionScroll'
 
 const CapsuleSection = () => {
 
@@ -15,6 +16,26 @@ const CapsuleSection = () => {
     const timeline = useRef(gsap.timeline({paused: true}))
     const [bgX, setBgX] = useState(0)
     const { scrollYProgress } = useScroll()
+    const triggerRef = useRef();
+    const dataRef = useIntersectionObserver(triggerRef, {
+      freezeOnceVisible: true
+    });
+
+    const ltf = useSpring({
+      from: {transform: 'translateX(30%)', opacity: 0},
+      to: dataRef?.isIntersecting ? {transform: 'translateX(0%)', opacity: scrollYProgress} : {transform: 'translateX(30%)', opacity: 0} ,
+      config: {duration: 1000},
+      
+      reset: true
+    })
+
+    const rtl = useSpring({
+      from: {transform: 'translateX(-30%)', opacity: 0},
+      to: dataRef?.isIntersecting ? {transform: 'translateX(0%)', opacity: scrollYProgress} : {transform: 'translateX(30%)', opacity: 0} ,
+      config: {duration: 1000},
+      
+      reset: true
+    })
   
     gsap.registerPlugin(ScrollTrigger);
 
@@ -97,20 +118,6 @@ const CapsuleSection = () => {
   
     },[])
 
-    // useEffect(() => {
-    //   gsap.set('#crvTrigger-element', {opacity: 0});
-    //     gsap.to("#crvTrigger-element", {
-    //     scrollTrigger: {
-    //       trigger: "#crvTrigger",
-    //       start: "center center",
-    //       // end: "bot",
-    //       pin: true,
-    //       // markers: true,
-    //       scrub: true
-    //     },
-    //     opacity: 1
-    //   });
-    // },[])
   
     //   window.requestAnimationFrame(scrollPlay);
   
@@ -189,8 +196,8 @@ const CapsuleSection = () => {
             </div>
       </div>
       <div className='h-max'>
-      <animated.div style={{ opacity: scrollYProgress }}>
-        <div className='flex flex-row place-content-end' id='crvTrigger'>
+      <div>
+        <animated.div className='flex flex-row place-content-end' style={ltf} on id='crvTrigger'>
           <div className='eclip1 w-96 mx-5 mr-16'  id='crvTrigger-element'>
             <span className='flex flex-row'>
               <img src={Cap1} width={'10%'} className='h-7 mt-3'/>
@@ -198,31 +205,37 @@ const CapsuleSection = () => {
             </span>
               <p className='text-tintFont text-[11px] font-semibold mt-1 tracking-wider'>Our trademarked technology combines oily and dry ingredients in a single capsule, including incompatible ingredients like Fat and Water soluble Vitamins and Minerals. Intake all key nutrients with just 1 pill a day.</p>
           </div>
-        </div>
         </animated.div>
-        <animated.div style={{ opacity: scrollYProgress }}>
+        <div ref={triggerRef} />
+      </div>
 
-        <div className='flex flex-row' id='crvTrigger'>
-          <div className='eclip1 w-96 mt-40 mx-5 ml-32' id='crvTrigger-element'>
-            <span className='flex flex-row'>
-              <img src={Time1} width={'10%'} className='h-6 mx-3'/>
-              <p className='text-tintFont text-xl font-bold tracking-wider'>Delayed Release Technology</p>
-            </span>
-              <p className='text-tintFont text-[11px] font-semibold mt-1 mx-2 tracking-wider'>Our delayed-release capsules dissolve in the small intestine, where nutrient absorption is most effective.</p>
-          </div>
+        
+        <div>
+          <animated.div className='flex flex-row' style={rtl} id='crvTrigger'>
+            <div className='eclip1 w-96 mt-40 mx-5 ml-32' id='crvTrigger-element'>
+              <span className='flex flex-row'>
+                <img src={Time1} width={'10%'} className='h-6 mx-3'/>
+                <p className='text-tintFont text-xl font-bold tracking-wider'>Delayed Release Technology</p>
+              </span>
+                <p className='text-tintFont text-[11px] font-semibold mt-1 mx-2 tracking-wider'>Our delayed-release capsules dissolve in the small intestine, where nutrient absorption is most effective.</p>
+            </div>
+          </animated.div>
+          <div ref={triggerRef} />
         </div>
-        </animated.div>
-        <animated.div style={{ opacity: scrollYProgress }}>
-        <div className='flex flex-row place-content-end ml-3' id='crvTrigger'>
-          <div className='eclip1 w-96 mt-72 mx-6 mr-56' id='crvTrigger-element'>
-            <span className='flex flex-row' id=''>
-              <img src={Cap2} width={'15%'} className='h-6 mx-1'/>
-              <p className='text-tintFont text-xl font-bold tracking-wider'>Liquid Fill Encapsulation with VFILL™ Technology</p>
-            </span>
-              <p className='text-tintFont text-[11px] font-semibold mt-1 mx-2 tracking-wider'>Our delayed-release capsules dissolve in the small intestine, where nutrient absorption is most effective.</p>
-          </div>
+
+
+        <div>
+          <animated.div className='flex flex-row place-content-end ml-3' style={ltf} id='crvTrigger'>
+            <div className='eclip1 w-96 mt-72 mx-6 mr-56' id='crvTrigger-element'>
+              <span className='flex flex-row' id=''>
+                <img src={Cap2} width={'15%'} className='h-6 mx-1'/>
+                <p className='text-tintFont text-xl font-bold tracking-wider'>Liquid Fill Encapsulation with VFILL™ Technology</p>
+              </span>
+                <p className='text-tintFont text-[11px] font-semibold mt-1 mx-2 tracking-wider'>Our delayed-release capsules dissolve in the small intestine, where nutrient absorption is most effective.</p>
+            </div>
+          </animated.div>
+          <div ref={triggerRef} />
         </div>
-        </animated.div>
         
       </div>
     </div>
