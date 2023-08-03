@@ -148,7 +148,7 @@ const CapsuleSection = () => {
       <div className=''>
           <div className='place-content-center'>
             <div className='contentBox'>
-            <img className='eclip sm:p-28 md:p-32 lg:p-40 xl:p-64 2xl:p-72' />
+            <img className='eclip sm:p-28 md:p-32 lg:p-40 xl:p-64 2xl:p-72 mt-14' />
             {/* <div onMouseMove={handleMouseMove} style={{
                 backgroundPositionX: bgX
               }}> */}
@@ -188,10 +188,10 @@ const CapsuleSection = () => {
                     </span>
                   </span>
                 </div>
-              <div className='absolute z-2 mt-9 ml-7 w-18'>
-                <p className='z-2 ml-80 text-[10px] font-normal text-tintFont whitespace-nowrap mt-0'>Plant based</p>
-                <p className='z-2 ml-80 text-[10px] font-normal text-tintFont whitespace-nowrap mt-0'>Mint Enhanced</p>
-                <p className='z-2 ml-80 text-[10px] font-normal text-tintFont whitespace-nowrap mt-0'>Liquid Fill 2-  in -1 Technology</p>
+              <div className='absolute z-2 mt-32 ml-7 w-18'>
+                <p className='z-2 ml-80 text-[10px] font-normal text-tintFont whitespace-nowrap'>Plant based</p>
+                <p className='z-2 ml-80 text-[10px] font-normal text-tintFont whitespace-nowrap'>Mint Enhanced</p>
+                <p className='z-2 ml-80 text-[10px] font-normal text-tintFont whitespace-nowrap'>Liquid Fill 2-  in -1 Technology</p>
 
               </div>
               </div>
@@ -199,7 +199,7 @@ const CapsuleSection = () => {
 
             </div>
       </div>
-      <div className='h-max mt-20'>
+      <div className='h-5/6 mt-20'>
       <div>
         <animated.div className='flex flex-row place-content-end' style={ltf} on id='crvTrigger'>
           <div className='eclip1 w-96 mx-5 mr-16'  id='crvTrigger-element'>
