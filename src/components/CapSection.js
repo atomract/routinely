@@ -8,7 +8,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import { useScroll, animated, useSpring } from '@react-spring/web'
 import useIntersectionObserver from '../functions/InteractionScroll'
-
+import AirPodsAnimation from './AirPodsAnimation.js'
 const CapsuleSection = () => {
 
     const vidRef = useRef(null);
@@ -25,7 +25,7 @@ const CapsuleSection = () => {
       from: {transform: 'translateX(30%)', opacity: 0},
       to: dataRef?.isIntersecting ? {transform: 'translateX(0%)', opacity: scrollYProgress} : {transform: 'translateX(30%)', opacity: 0} ,
       config: {duration: 1000},
-      
+
       reset: true
     })
 
@@ -33,17 +33,17 @@ const CapsuleSection = () => {
       from: {transform: 'translateX(-30%)', opacity: 0},
       to: dataRef?.isIntersecting ? {transform: 'translateX(0%)', opacity: scrollYProgress} : {transform: 'translateX(30%)', opacity: 0} ,
       config: {duration: 1000},
-      
+
       reset: true
     })
-  
+
     gsap.registerPlugin(ScrollTrigger);
 
     const handleMouseMove = (e) => {
       setBgX(-e.nativeEvent.offsetX);
     };
-  
-  
+
+
     useEffect(() => {
       const rows = 11;
       const columns = 11;
@@ -57,7 +57,7 @@ const CapsuleSection = () => {
       timeline.current.from(vidRef.current, {
         opacity: 1,
         x: '10%',
-        scrollTrigger: { 
+        scrollTrigger: {
           trigger: vidRef.current,
           id: 'project-pin-1',
           start: "top 20%",
@@ -76,9 +76,9 @@ const CapsuleSection = () => {
 
 
       gsap.set(".viewer", { width: horizDiff, height: vertDiff });
-      
+
       const setPos = gsap.quickSetter(".viewer", 'background-position');
-  
+
       const obj = { num: 0 };
       gsap.to(obj, {
         num: frame_count,
@@ -93,7 +93,7 @@ const CapsuleSection = () => {
           // markers: true,
           pin: true,
           // anticipatePin: 1,
-          scrub: true
+          scrub: 4
         },
         onUpdate: () =>{
           setPos(`
@@ -113,36 +113,36 @@ const CapsuleSection = () => {
       //     scrub: true
       //   }
       // });
-      
-  
-  
+
+
+
     },[])
 
-  
+
     //   window.requestAnimationFrame(scrollPlay);
-  
+
     //   return () => {
     //     window.cancelAnimationFrame(scrollPlay);
     //   };
     // }, []);
-  
+
     // useEffect(() => {
     //   let playbackConst = 500
-  
+
     //   const setHeight = setHeightRef.current;
     //   const vid = vidRef.current;
-  
+
     //   const handleLoadedMetadata = () => {
     //     setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
     //   };
-  
+
     //   vid.addEventListener('loadedmetadata', handleLoadedMetadata);
-  
+
     //   return () => {
     //     vid.removeEventListener('loadedmetadata', handleLoadedMetadata);
     //   };
     // }, []);
-  
+
 
     return (
       <div className=''>
@@ -160,11 +160,15 @@ const CapsuleSection = () => {
                 <p className='strk-3 text-7xl font-bold tracking-wider mt-20'>Elevate Your Wellness <span className='font-extrabold strk-0'>Journey</span></p>
               </span>
             </div>
+            <canvas id="hero-lightpass" />
               <div id='scene'>
 
                 <div className='viewer'>
-                    
+
                 </div>
+
+                <AirPodsAnimation />
+
               {/* <div ref={setHeightRef} id="set-height">
               </div> */}
                   {/* <video ref={vidRef} id="v0" >
@@ -184,14 +188,14 @@ const CapsuleSection = () => {
                     </span>
                   </span>
                 </div>
-              <div className='absolute z-2 mt-9 ml-7 w-18'> 
+              <div className='absolute z-2 mt-9 ml-7 w-18'>
                 <p className='z-2 ml-80 text-[10px] font-normal text-tintFont whitespace-nowrap mt-0'>Plant based</p>
                 <p className='z-2 ml-80 text-[10px] font-normal text-tintFont whitespace-nowrap mt-0'>Mint Enhanced</p>
                 <p className='z-2 ml-80 text-[10px] font-normal text-tintFont whitespace-nowrap mt-0'>Liquid Fill 2-  in -1 Technology</p>
 
               </div>
               </div>
-                
+
 
             </div>
       </div>
@@ -209,7 +213,7 @@ const CapsuleSection = () => {
         <div ref={triggerRef} />
       </div>
 
-        
+
         <div>
           <animated.div className='flex flex-row' style={rtl} id='crvTrigger'>
             <div className='eclip1 w-96 mt-40 mx-5 ml-32' id='crvTrigger-element'>
@@ -236,7 +240,7 @@ const CapsuleSection = () => {
           </animated.div>
           <div ref={triggerRef} />
         </div>
-        
+
       </div>
     </div>
     )
