@@ -167,7 +167,7 @@ const CapsuleSection = () => {
 
                 </div>
 
-                <AirPodsAnimation className='mb-30' />
+                <AirPodsAnimation className='mb-48' />
 
               {/* <div ref={setHeightRef} id="set-height">
               </div> */}
