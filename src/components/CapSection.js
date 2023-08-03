@@ -148,7 +148,7 @@ const CapsuleSection = () => {
       <div className=''>
           <div className='place-content-center'>
             <div className='contentBox'>
-            <img className='eclip' />
+            <img className='eclip sm:p-28 md:p-32 lg:p-40 xl:p-64 2xl:p-72' />
             {/* <div onMouseMove={handleMouseMove} style={{
                 backgroundPositionX: bgX
               }}> */}
@@ -157,7 +157,7 @@ const CapsuleSection = () => {
             {/* </div> */}
             <div className='-z-5 ' ref={vidRef}>
               <span className='anim_item'>
-                <p className='strk-3 text-7xl font-bold tracking-wider mt-20'>Elevate Your Wellness <span className='font-extrabold strk-0'>Journey</span></p>
+                <p className='strk-3  sm:text-xl md:text-3xl lg:text-5xl xl:text-7xl 2xl:text-8xl font-bold tracking-wider mt-20'>Elevate Your Wellness <span className='xl:font-extrabold 2xl:font-extrabold lg:font-extrabold  md:font-bold sm:font-bold strk-0'>Journey</span></p>
               </span>
             </div>
             <canvas id="hero-lightpass" />
