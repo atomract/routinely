@@ -199,7 +199,7 @@ const CapsuleSection = () => {
 
             </div>
       </div>
-      <div className='h-max'>
+      <div className='h-max mt-20'>
       <div>
         <animated.div className='flex flex-row place-content-end' style={ltf} on id='crvTrigger'>
           <div className='eclip1 w-96 mx-5 mr-16'  id='crvTrigger-element'>
