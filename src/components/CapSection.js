@@ -148,7 +148,7 @@ const CapsuleSection = () => {
       <div className=''>
           <div className='place-content-center'>
             <div className='contentBox'>
-            <img className='eclip sm:p-28 md:p-32 lg:p-40 xl:p-64 2xl:p-72 mt-14' />
+            <img className='eclip sm:p-28 md:p-32 lg:p-40 xl:p-64 2xl:p-72 mt-32' />
             {/* <div onMouseMove={handleMouseMove} style={{
                 backgroundPositionX: bgX
               }}> */}
