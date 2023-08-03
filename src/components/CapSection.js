@@ -148,7 +148,7 @@ const CapsuleSection = () => {
       <div className=''>
           <div className='place-content-center'>
             <div className='contentBox'>
-            <img className='eclip sm:p-28 md:p-32 lg:p-40 xl:p-64 2xl:p-72 mt-14' />
+            <img className='eclip sm:p-28 md:p-32 lg:p-40 xl:p-52 2xl:p-64 mt-14' />
             {/* <div onMouseMove={handleMouseMove} style={{
                 backgroundPositionX: bgX
               }}> */}
@@ -167,7 +167,7 @@ const CapsuleSection = () => {
 
                 </div>
 
-                <AirPodsAnimation className='mb-48' />
+                <AirPodsAnimation />
 
               {/* <div ref={setHeightRef} id="set-height">
               </div> */}
