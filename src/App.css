@@ -54,7 +54,7 @@
   height: 153vh;
   margin-left: 1rem;
   z-index: -10;
-  background-size: 96vw 105vh;
+  /* background-size: 96vw 105vh; */
   background-image: url('./assets/BG.png');
   background-repeat: no-repeat;
 }
@@ -68,7 +68,7 @@
   z-index: 0;
   background-repeat: no-repeat;
   margin-bottom: 5rem;
-  padding: 16rem;
+  /* padding: 16rem; */
   background-size: 100% 100%;
   background-image: url('./assets/eclipseGrp.png');
 }
