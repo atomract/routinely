@@ -147,8 +147,8 @@ const CapsuleSection = () => {
     return (
       <div className=''>
           <div className='place-content-center'>
-            <div className='contentBox'>
-            <img className='eclip sm:p-28 md:p-32 lg:p-40 xl:p-52 2xl:p-64 mt-14' />
+            <div className='contentBox sm:h-48 md:h-64 lg:h-[24rem] xl:h-[32rem] 2xl:h-[36rem]'>
+            <img className='eclip sm:p-28 md:p-32 lg:p-40 xl:p-52 2xl:p-64 mt-30' />
             {/* <div onMouseMove={handleMouseMove} style={{
                 backgroundPositionX: bgX
               }}> */}
@@ -199,7 +199,7 @@ const CapsuleSection = () => {
 
             </div>
       </div>
-      <div className='h-5/6 mt-20'>
+      <div className='sm:1/3 md:h-1/2 lg:h-2/3 xl:h-5/6 2xl:h-5/6 mt-20'>
       <div>
         <animated.div className='flex flex-row place-content-end' style={ltf} on id='crvTrigger'>
           <div className='eclip1 w-96 mx-5 mr-16'  id='crvTrigger-element'>

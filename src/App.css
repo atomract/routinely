@@ -55,7 +55,6 @@ canvas {
   align-items: center;
   justify-content: center;
   width: 96vw;
-  height: 32rem;
   margin-left: 1rem;
   z-index: -10;
   background-image: url('./assets/BG.png');
@@ -125,7 +124,7 @@ canvas {
   z-index: 0;
   /* margin-bottom: 6rem; */
   background-repeat: no-repeat;
-  margin-top: 6rem;
+  /* margin-top: 6rem; */
   /* padding: 3rem; */
 }
 
