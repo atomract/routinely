@@ -147,8 +147,8 @@ const CapsuleSection = () => {
     return (
       <div className=''>
           <div className='place-content-center'>
-            <div className='contentBox sm:h-48 md:h-64 lg:h-[24rem] xl:h-[32rem] 2xl:h-[36rem]'>
-            <img className='eclip sm:p-28 md:p-32 lg:p-40 xl:p-52 2xl:p-64 mt-30' />
+            <div className='contentBox sm:h-48 md:h-64 lg:h-[36rem] xl:h-[44rem] 2xl:h-[52rem]'>
+            <img className='eclip sm:p-32 md:p-36 lg:p-44 xl:p-52 2xl:p-64 mt-30' />
             {/* <div onMouseMove={handleMouseMove} style={{
                 backgroundPositionX: bgX
               }}> */}
@@ -183,8 +183,8 @@ const CapsuleSection = () => {
                   <span className='ml-5'>
                     <span className='flex flex-row ml-80'>
 
-                      <img src={Levs1} className='h-10' width={'60%'}/>
-                      <p className='font-bold text-tintFont whitespace-nowrap mt-1.5 ml-2'>{"Nature’s Essence"}</p>
+                      <img src={Levs1} className='h-10 mt-24' width={'50%'}/>
+                      <p className='font-bold text-tintFont whitespace-nowrap mt-24 '>{"Nature’s Essence"}</p>
                     </span>
                   </span>
                 </div>
@@ -200,12 +200,12 @@ const CapsuleSection = () => {
             </div>
       </div>
       <div className='sm:1/3 md:h-1/2 lg:h-2/3 xl:h-5/6 2xl:h-5/6 mt-20'>
-      <div>
-        <animated.div className='flex flex-row place-content-end' style={ltf} on id='crvTrigger'>
-          <div className='eclip1 w-96 mx-5 mr-16'  id='crvTrigger-element'>
+      <div className='md:place-content-center sm:place-content-center'>
+        <animated.div className='flex flex-row 2xl:place-content-end lg:place-content-end xl:place-content-end' style={ltf} on id='crvTrigger'>
+          <div className='eclip1 lg:w-80 md:w-60 sm:w-44 2xl:w-96 xl:w-96 mx-5 mr-16'  id='crvTrigger-element'>
             <span className='flex flex-row'>
               <img src={Cap1} width={'10%'} className='h-7 mt-3'/>
-              <p className='text-tintFont text-xl font-bold tracking-wider'>Unique Capsule in Capsule, 2-IN-1 Technology</p>
+              <p className='text-tintFont sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold tracking-wider'>Unique Capsule in Capsule, 2-IN-1 Technology</p>
             </span>
               <p className='text-tintFont text-[11px] font-semibold mt-1 tracking-wider'>Our trademarked technology combines oily and dry ingredients in a single capsule, including incompatible ingredients like Fat and Water soluble Vitamins and Minerals. Intake all key nutrients with just 1 pill a day.</p>
           </div>
@@ -214,12 +214,12 @@ const CapsuleSection = () => {
       </div>
 
 
-        <div>
+        <div className='md:place-content-center sm:place-content-center sm:ml-0 md:ml-0 ml-40'>
           <animated.div className='flex flex-row' style={rtl} id='crvTrigger'>
-            <div className='eclip1 w-96 mt-40 mx-5 ml-32' id='crvTrigger-element'>
+            <div className='eclip1 lg:w-80 md:w-60 sm:w-44 2xl:w-96 xl:w-96 mt-40 mx-5 sm:ml-0 md:ml-0 2xl:ml-32 lg:ml-28 xl:ml-32' id='crvTrigger-element'>
               <span className='flex flex-row'>
                 <img src={Time1} width={'10%'} className='h-6 mx-3'/>
-                <p className='text-tintFont text-xl font-bold tracking-wider'>Delayed Release Technology</p>
+                <p className='text-tintFont sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold tracking-wider'>Delayed Release Technology</p>
               </span>
                 <p className='text-tintFont text-[11px] font-semibold mt-1 mx-2 tracking-wider'>Our delayed-release capsules dissolve in the small intestine, where nutrient absorption is most effective.</p>
             </div>
@@ -228,12 +228,12 @@ const CapsuleSection = () => {
         </div>
 
 
-        <div>
-          <animated.div className='flex flex-row place-content-end ml-3' style={ltf} id='crvTrigger'>
-            <div className='eclip1 w-96 mt-72 mx-6 mr-56' id='crvTrigger-element'>
+        <div className='md:place-content-center sm:place-content-center'>
+          <animated.div className='flex flex-row 2xl:place-content-end lg:place-content-end xl:place-content-end ml-3' style={ltf} id='crvTrigger'>
+            <div className='eclip1 lg:w-80 md:w-60 sm:w-44 2xl:w-96 xl:w-96 mt-72 mx-6 mr-56' id='crvTrigger-element'>
               <span className='flex flex-row' id=''>
                 <img src={Cap2} width={'15%'} className='h-6 mx-1'/>
-                <p className='text-tintFont text-xl font-bold tracking-wider'>Liquid Fill Encapsulation with VFILL™ Technology</p>
+                <p className='text-tintFont sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold tracking-wider'>Liquid Fill Encapsulation with VFILL™ Technology</p>
               </span>
                 <p className='text-tintFont text-[11px] font-semibold mt-1 mx-2 tracking-wider'>Our delayed-release capsules dissolve in the small intestine, where nutrient absorption is most effective.</p>
             </div>
