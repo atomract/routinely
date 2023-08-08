@@ -42,16 +42,16 @@ const CapsuleSection = () => {
   };
 
     const ltf = useSpring({
-      from: {transform: 'translateX(30%)', opacity: 0},
-      to: dataRef?.isIntersecting ? {transform: 'translateX(0%)', opacity: scrollYProgress} : {transform: 'translateX(30%)', opacity: 0} ,
+      from: {transform: 'translateX(30%)'},
+      to: dataRef?.isIntersecting ? {transform: 'translateX(0%)'} : {transform: 'translateX(30%)', } ,
       config: {duration: 1000},
 
       // reset: true
     })
 
     const rtl = useSpring({
-      from: {transform: 'translateX(-30%)', opacity: 0},
-      to: dataRef?.isIntersecting ? {transform: 'translateX(0%)', opacity: scrollYProgress} : {transform: 'translateX(30%)', opacity: 0} ,
+      from: {transform: 'translateX(-30%)'},
+      to: dataRef?.isIntersecting ? {transform: 'translateX(0%)', } : {transform: 'translateX(30%)', } ,
       config: {duration: 1000},
 
       // reset: true
