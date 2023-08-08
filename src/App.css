@@ -1,5 +1,5 @@
 .App {
-  height: 100vh;
+  max-height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: row;
@@ -11,8 +11,9 @@ canvas {
   top: 50%;
   transform: translate(-35%, -50%);
   max-width: 100vw;
-  max-height: 100vh;
+  max-height: 100vh !important;
   z-index: 99;
+  overflow: hidden ;
 }
 .App-logo {
   height: 40vmin;
@@ -33,7 +34,7 @@ canvas {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150vh;
+  /* height: 150vh; */
   width: 50vw;
 }
 
@@ -142,5 +143,21 @@ canvas {
 }
 
 .sec2 {
+  z-index: 0;
+  position: absolute;
+  display: flex;
   height: 100vh;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.mainDiv {
+  max-height: 300vh;
+}
+
+.e152 {
+  background-image: url('./assets/E1152.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
 }

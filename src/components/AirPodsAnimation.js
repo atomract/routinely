@@ -32,12 +32,17 @@ console.log(currentFrame)
 
     }
 
+    const vh = (coef) => window.innerHeight * (coef/100);
+    const vw = (coef) => window.innerWidth * (coef/100);
+
     gsap.to(airpods, {
       frame: frameCount - 1,
       snap: 'frame',
       ease: 'none',
       scrollTrigger: {
-        scrub: 0.5
+        scrub: 0.5,
+        end: () => Math.min(vw(100), vh(180)) + ' bottom', // vmin
+
       },
       onUpdate: render // use animation onUpdate instead of scrollTrigger's onUpdate
     });

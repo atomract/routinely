@@ -12,21 +12,41 @@ import AirPodsAnimation from './AirPodsAnimation.js'
 const CapsuleSection = () => {
 
     const vidRef = useRef(null);
-    const setHeightRef = useRef(null);
     const timeline = useRef(gsap.timeline({paused: true}))
-    const [bgX, setBgX] = useState(0)
     const { scrollYProgress } = useScroll()
     const triggerRef = useRef();
+    const [isVisible, setIsVisible] = useState(true);
+    const [height, setHeight] = useState(0)
     const dataRef = useIntersectionObserver(triggerRef, {
       freezeOnceVisible: true
     });
+
+  
+  useEffect(() => {   
+    window.addEventListener("scroll", listenToScroll);
+    return () => 
+       window.removeEventListener("scroll", listenToScroll); 
+  }, [])
+  
+  const listenToScroll = () => {
+    let heightToHideFrom = 900;
+    const winScroll = document.body.scrollTop || 
+        document.documentElement.scrollTop;
+    setHeight(winScroll);
+
+    if (winScroll > heightToHideFrom) {  
+         isVisible && setIsVisible(false);
+    } else {
+         setIsVisible(true);
+    }  
+  };
 
     const ltf = useSpring({
       from: {transform: 'translateX(30%)', opacity: 0},
       to: dataRef?.isIntersecting ? {transform: 'translateX(0%)', opacity: scrollYProgress} : {transform: 'translateX(30%)', opacity: 0} ,
       config: {duration: 1000},
 
-      reset: true
+      // reset: true
     })
 
     const rtl = useSpring({
@@ -34,14 +54,10 @@ const CapsuleSection = () => {
       to: dataRef?.isIntersecting ? {transform: 'translateX(0%)', opacity: scrollYProgress} : {transform: 'translateX(30%)', opacity: 0} ,
       config: {duration: 1000},
 
-      reset: true
+      // reset: true
     })
 
     gsap.registerPlugin(ScrollTrigger);
-
-    const handleMouseMove = (e) => {
-      setBgX(-e.nativeEvent.offsetX);
-    };
 
 
     useEffect(() => {
@@ -75,80 +91,16 @@ const CapsuleSection = () => {
       // const vidRef = document.querySelectorAll(".anim_item");
 
 
-      gsap.set(".viewer", { width: horizDiff, height: vertDiff });
-
-      const setPos = gsap.quickSetter(".viewer", 'background-position');
-
-      const obj = { num: 0 };
-      gsap.to(obj, {
-        num: frame_count,
-        ease: "steps(" + frame_count + ")",
-        scrollTrigger: {
-          trigger: "#scene",
-          frames: frame_count * 600,
-          snap: 'frame',
-          // start: 'bottom center',
-          // end: "top 500px",
-          // end: imageHeight,
-          // markers: true,
-          pin: true,
-          // anticipatePin: 1,
-          scrub: 4
-        },
-        onUpdate: () =>{
-          setPos(`
-            ${-Math.round((obj.num % columns) * horizDiff)}px
-            ${-Math.round(Math.floor(obj.num / columns) * vertDiff)}px
-          `)
-        }
-      });
-      // gsap.to(".viewer", {
-      //   backgroundPosition: (-offset_v * frame_count * 2) + "px",
-      //   ease: "steps(" + frame_count + ")", // use a stepped ease for the sprite sheet
-      //   scrollTrigger: {
-      //     trigger: ".scene",
-      //     start: "top top",
-      //     end: "+=" + (frame_count * offset_v),
-      //     pin: true,
-      //     scrub: true
-      //   }
-      // });
-
-
-
     },[])
 
 
-    //   window.requestAnimationFrame(scrollPlay);
-
-    //   return () => {
-    //     window.cancelAnimationFrame(scrollPlay);
-    //   };
-    // }, []);
-
-    // useEffect(() => {
-    //   let playbackConst = 500
-
-    //   const setHeight = setHeightRef.current;
-    //   const vid = vidRef.current;
-
-    //   const handleLoadedMetadata = () => {
-    //     setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
-    //   };
-
-    //   vid.addEventListener('loadedmetadata', handleLoadedMetadata);
-
-    //   return () => {
-    //     vid.removeEventListener('loadedmetadata', handleLoadedMetadata);
-    //   };
-    // }, []);
 
 
     return (
       <div className=''>
           <div className='place-content-center'>
             <div className='contentBox sm:h-48 md:h-64 lg:h-[36rem] xl:h-[44rem] 2xl:h-[52rem]'>
-            <img className='eclip sm:p-32 md:p-36 lg:p-44 xl:p-52 2xl:p-64 mt-30' />
+            <img className='eclip sm:p-32 md:p-36 lg:p-44 xl:p-52 2xl:p-64 mb-36' />
             {/* <div onMouseMove={handleMouseMove} style={{
                 backgroundPositionX: bgX
               }}> */}
@@ -157,24 +109,29 @@ const CapsuleSection = () => {
             {/* </div> */}
             <div className='-z-5 ' ref={vidRef}>
               <span className='anim_item'>
-                <p className='strk-3  sm:text-xl md:text-3xl lg:text-5xl xl:text-7xl 2xl:text-8xl font-bold tracking-wider mt-20'>Elevate Your Wellness <span className='xl:font-extrabold 2xl:font-extrabold lg:font-extrabold  md:font-bold sm:font-bold strk-0'>Journey</span></p>
+                <p className='strk-3  sm:text-xl md:text-3xl lg:text-5xl xl:text-7xl 2xl:text-8xl font-bold tracking-wider '>Elevate Your Wellness <span className='xl:font-extrabold 2xl:font-extrabold lg:font-extrabold  md:font-bold sm:font-bold strk-0'>Journey</span></p>
               </span>
             </div>
-            <canvas id="hero-lightpass" />
-              <div id='scene'>
 
-                <div className='viewer'>
+              {
+        isVisible 
+         && 
 
-                </div>
+         <div className='max-h-96 hide'>
 
-                <AirPodsAnimation />
+          <canvas id="hero-lightpass " />
+            {/* <div id='scene'> */}
+          <AirPodsAnimation />
+          </div>
+      }
+
 
               {/* <div ref={setHeightRef} id="set-height">
               </div> */}
                   {/* <video ref={vidRef} id="v0" >
                   <source type='video/mp4' src={Vdeo}></source>
                 </video> */}
-              </div>
+              {/* </div> */}
               <div className='lves2'>
               <svg xmlns="http://www.w3.org/2000/svg" className='natEssen' width="193" height="90.5" viewBox="0 0 382 177" fill="none">
                 <path d="M0 29.9957V147.037C0 163.606 13.4314 177 30 177H282.545C299.114 177 312.545 163.569 312.545 147V142.462C312.545 125.894 325.977 112.462 342.545 112.462H352C368.569 112.462 382 99.0306 382 82.4621V30C382 13.4315 368.569 0 352 0H30C13.4315 0 0 13.4271 0 29.9957Z" fill="white"/>
