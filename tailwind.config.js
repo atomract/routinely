@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     colors: {
       tintFont: '#0A4F6D',
-      whiteFont: '#FFFF'
+      whiteFont: '#FFFF',
+      skinFont: '#FDF6EB;',
     },
     extend: {},
   },

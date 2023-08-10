@@ -8,6 +8,7 @@ import CapsuleSection from './components/CapSection';
 import VideoSection from './components/secVideo';
 import SliderSection from './components/SliderPage';
 import HandPillPage from './components/HandPillPage';
+import WellnessBowlPage from './components/WellnessBowl';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
         <SliderSection/>
       </div>
       <HandPillPage/>
+      <WellnessBowlPage/>
     </div>
     // <>
     //   <Navbar/>
