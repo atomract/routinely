@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import CapsuleSection from './components/CapSection';
 import VideoSection from './components/secVideo';
 import SliderSection from './components/SliderPage';
+import HandPillPage from './components/HandPillPage';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
       <div className='mt-5 place-conent-center'>
         <SliderSection/>
       </div>
+      <HandPillPage/>
     </div>
     // <>
     //   <Navbar/>

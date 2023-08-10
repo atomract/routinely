@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import BottlwImg from '../assets/ImgBottl.png'
+import ImageList from './ImageSlider'
 
 const SliderSection = () => {
 
@@ -62,7 +63,11 @@ const SliderSection = () => {
                                     return (
                                         <div className='flex flex-col  px-6'>
                                             <div className={`${k===idx ? "px-10" : null}`}>
-                                                <img className={`h-52 z-5 w-44 rounded-3xl ${k===idx ? "mt-12 scale-150 ease-in duration-700" : null}`} src={e.path}/>
+                                                {k===idx ? 
+                                                <ImageList srcPath={e.path} idx={k}/>
+                                                    : <img className='h-52 z-5 w-44 rounded-3xl' src={e.path}/>
+                                            }
+                                             {/* /   <ImageList srcPath={e.path} ky={k} idx={idx}/> */}
                                             </div>
                                         </div>
                                     )
@@ -88,7 +93,6 @@ const SliderSection = () => {
                                         <circle cx="22" cy="22" r="21" stroke="white" stroke-width="2"/>
                                     </svg>
                                 </button>
-
                             </div>
                         </div>
                     </div>

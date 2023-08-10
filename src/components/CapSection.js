@@ -178,7 +178,7 @@ const CapsuleSection = () => {
                 <img src={Time1} width={'10%'} className='h-6 mx-3'/>
                 <p className='text-tintFont sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold tracking-wider'>Delayed Release Technology</p>
               </span>
-                <p className='text-tintFont text-[11px] font-semibold mt-1 mx-2 tracking-wider'>Our delayed-release capsules dissolve in the small intestine, where nutrient absorption is most effective.</p>
+                <p className='text-Font text-[11px] font-semibold mt-1 mx-2 tracking-wider'>Our delayed-release capsules dissolve in the small intestine, where nutrient absorption is most effective.</p>
             </div>
           </animated.div>
           <div ref={triggerRef} />
