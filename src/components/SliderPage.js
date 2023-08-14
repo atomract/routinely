@@ -54,7 +54,7 @@ const SliderSection = () => {
 
     return (
         <>
-            <div className="e152 z-0 h-[980px] bg-contain shrink-0 w-[1280px]"  >
+            <div className="e152 z-0 h-[980px] shrink-0 w-[1280px]"  >
                 <div className='py-60'>
                     <div className='flex flex-col'>
                         <div className='flex flex-row p-10'>
@@ -65,7 +65,7 @@ const SliderSection = () => {
                                             <div className={`${k===idx ? "px-10" : null}`}>
                                                 {k===idx ? 
                                                 <ImageList srcPath={e.path} idx={k}/>
-                                                    : <img className='h-52 z-5 w-44 rounded-3xl' src={e.path}/>
+                                                    : <img className='h-52 z-5 w-44 rounded-3xl opacity-70' src={e.path}/>
                                             }
                                              {/* /   <ImageList srcPath={e.path} ky={k} idx={idx}/> */}
                                             </div>

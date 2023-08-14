@@ -9,6 +9,10 @@ import VideoSection from './components/secVideo';
 import SliderSection from './components/SliderPage';
 import HandPillPage from './components/HandPillPage';
 import WellnessBowlPage from './components/WellnessBowl';
+import ImageSlider from './Animation/AutoSlider';
+import IconPage from './components/IconPage';
+import GalleryPage from './components/Gallery';
+import ReviewPage from './components/Reviews';
 
 function App() {
 
@@ -28,6 +32,13 @@ function App() {
       </div>
       <HandPillPage/>
       <WellnessBowlPage/>
+      <IconPage/>
+      <div className='py-10'>
+        <GalleryPage/>
+      </div>
+      <div className='py-20'>
+        <ReviewPage/>
+      </div>
     </div>
     // <>
     //   <Navbar/>

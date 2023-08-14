@@ -7,9 +7,9 @@ const ImageList = ({srcPath, idx, ky}) => {
 
     const transitions = useTransition(idx, {
         
-      from: {scale: 1 },
+      from: {scale: 0.5 },
       enter:  {scale: 1.5},
-      leave: {scale: 1 },
+      leave: {scale: 0.5 },
       config: {duration: 1000, tension: 600 },
 
     });
