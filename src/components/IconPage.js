@@ -14,7 +14,7 @@ const IconPage = () => {
                         </svg>
                     </div>
                     <div className="flex ">
-                        <p>Vegetarian and Plant Based</p>
+                        <p className="text-center">Scientifically Backed</p>
                     </div>
                 </div>
                 <div className="flex py-20 px-10 flex-col text-xs">
@@ -32,7 +32,7 @@ const IconPage = () => {
                         </svg>
                     </div>
                     <div className="flex ">
-                        <p>Vegetarian and Plant Based</p>
+                        <p className="text-center">Cruelty Free</p>
                     </div>
                 </div>
                 <div className="flex py-20 px-10 flex-col text-xs">
@@ -50,7 +50,7 @@ const IconPage = () => {
                         </svg>
                     </div>
                     <div className="flex ">
-                        <p>Vegetarian and Plant Based</p>
+                        <p className="text-center">Major Allergen Free</p>
                     </div>
                 </div>
                 <div className="flex py-20 px-10 flex-col text-xs">
@@ -68,7 +68,7 @@ const IconPage = () => {
                         </svg>
                     </div>
                     <div className="flex ">
-                        <p>Vegetarian and Plant Based</p>
+                        <p className="text-center">No Sweetners</p>
                     </div>
                 </div>
                 <div className="flex py-20 px-10 flex-col text-xs">
@@ -79,7 +79,7 @@ const IconPage = () => {
                         </svg>
                     </div>
                     <div className="flex ">
-                        <p>Vegetarian and Plant Based</p>
+                        <p className="text-center">Vegetarian and Plant Based</p>
                     </div>
                 </div>
                 <div className="flex py-20 px-10 flex-col text-xs">
@@ -97,7 +97,7 @@ const IconPage = () => {
                         </svg>
                     </div>
                     <div className="flex ">
-                        <p>Vegetarian and Plant Based</p>
+                        <p className="text-center">Delayed-Release Capsule Design</p>
                     </div>
                 </div>
                 <div className="flex py-20 px-10 flex-col text-xs">
@@ -112,7 +112,7 @@ const IconPage = () => {
                         </svg>
                     </div>
                     <div className="flex ">
-                        <p>Vegetarian and Plant Based</p>
+                        <p className="text-center">Non-GMO</p>
                     </div>
                 </div>
                 <div className="flex py-20 px-10 flex-col text-xs">
@@ -127,7 +127,7 @@ const IconPage = () => {
                         </svg>
                     </div>
                     <div className="flex ">
-                        <p>Vegetarian and Plant Based</p>
+                        <p className="text-center">No Artificial Colorants</p>
                     </div>
                 </div>
 
