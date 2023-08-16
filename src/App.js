@@ -13,6 +13,7 @@ import ImageSlider from './Animation/AutoSlider';
 import IconPage from './components/IconPage';
 import GalleryPage from './components/Gallery';
 import ReviewPage from './components/Reviews';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -38,6 +39,9 @@ function App() {
       </div>
       <div className='py-20'>
         <ReviewPage/>
+      </div>
+      <div>
+        <Footer/>
       </div>
     </div>
     // <>

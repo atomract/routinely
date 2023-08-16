@@ -10,6 +10,7 @@ module.exports = {
       whiteFont: '#FFFF',
       skinFont: '#FDF6EB;',
       bgFontLt: '#F7F7F7',
+      darkFont: '#0C111F',
     },
     extend: {},
   },

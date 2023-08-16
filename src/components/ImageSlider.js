@@ -10,7 +10,7 @@ const ImageList = ({srcPath, idx, ky}) => {
       from: {scale: 0.5 },
       enter:  {scale: 1.5},
       leave: {scale: 0.5 },
-      config: {duration: 1000, tension: 600 },
+      config: {duration: 600, tension: 600 },
 
     });
   
@@ -18,10 +18,10 @@ const ImageList = ({srcPath, idx, ky}) => {
       <div>
         <div >
           {transitions((style, i) => (
-            <div className='mt-12' key={i} >
+            <div className='xl:mt-12' key={i} >
               <animated.img
                 src={srcPath}
-                className={' h-52 z-5 w-44 rounded-3xl'}
+                className={'sm:h-28 sm:w-12 xl:h-52 z-5 xl:w-44 rounded-3xl'}
                 style={{ ...style }}
               />
             </div>

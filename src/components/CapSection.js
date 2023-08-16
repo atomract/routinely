@@ -29,7 +29,7 @@ const CapsuleSection = () => {
   }, [])
   
   const listenToScroll = () => {
-    let heightToHideFrom = 900;
+    let heightToHideFrom = 970;
     const winScroll = document.body.scrollTop || 
         document.documentElement.scrollTop;
     setHeight(winScroll);
