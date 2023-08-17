@@ -10,7 +10,7 @@ import Img17 from '../assets/Gallery/img17.png'
 
 const GalleryPage = () => {
     return (
-        <div className='flex flex-col'>
+        <div className='flex flex-col xl:mt-20'>
             <div className='place-content-center flex'>
                 <div className='flex flex-col '>
                     <p className='text-lg text-tintFont text-semibold'>Share your routinely Status with us</p>

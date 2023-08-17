@@ -109,7 +109,7 @@ const CapsuleSection = () => {
             {/* </div> */}
             <div className='-z-5 ' ref={vidRef}>
               <span className='anim_item'>
-                <p className='strk-3  sm:text-xl md:text-3xl lg:text-5xl xl:text-7xl 2xl:text-8xl font-bold tracking-wider '>Elevate Your Wellness <span className='xl:font-extrabold 2xl:font-extrabold lg:font-extrabold  md:font-bold sm:font-bold strk-0'>Journey</span></p>
+                <p className='strk-3  text-xl md:text-3xl lg:text-5xl xl:text-7xl 2xl:text-8xl font-bold tracking-wider '>Elevate Your Wellness <span className='xl:font-extrabold 2xl:font-extrabold lg:font-extrabold  md:font-bold font-bold strk-0'>Journey</span></p>
               </span>
             </div>
 
@@ -133,12 +133,12 @@ const CapsuleSection = () => {
                 </video> */}
               {/* </div> */}
               <div className='lves2'>
-              <svg xmlns="http://www.w3.org/2000/svg" className='natEssen' width="193" height="90.5" viewBox="0 0 382 177" fill="none">
+              <svg xmlns="http://www.w3.org/2000/svg" className='natEssen ml-auto xl:ml-[21rem]' width="193" height="90.5" viewBox="0 0 382 177" fill="none">
                 <path d="M0 29.9957V147.037C0 163.606 13.4314 177 30 177H282.545C299.114 177 312.545 163.569 312.545 147V142.462C312.545 125.894 325.977 112.462 342.545 112.462H352C368.569 112.462 382 99.0306 382 82.4621V30C382 13.4315 368.569 0 352 0H30C13.4315 0 0 13.4271 0 29.9957Z" fill="white"/>
               </svg>
                 <div className='natText'>
                   <span className='ml-5'>
-                    <span className='flex flex-row ml-80'>
+                    <span className='flex flex-row ml-auto xl:ml-80'>
 
                       <img src={Levs1} className='h-10 mt-24' width={'50%'}/>
                       <p className='font-bold text-tintFont whitespace-nowrap mt-24 '>{"Nature’s Essence"}</p>
@@ -146,9 +146,9 @@ const CapsuleSection = () => {
                   </span>
                 </div>
               <div className='absolute z-2 mt-32 ml-7 w-18'>
-                <p className='z-2 ml-80 text-[10px] font-normal text-tintFont whitespace-nowrap'>Plant based</p>
-                <p className='z-2 ml-80 text-[10px] font-normal text-tintFont whitespace-nowrap'>Mint Enhanced</p>
-                <p className='z-2 ml-80 text-[10px] font-normal text-tintFont whitespace-nowrap'>Liquid Fill 2-  in -1 Technology</p>
+                <p className='z-2 ml-auto xl:ml-80 text-[10px] font-normal text-tintFont whitespace-nowrap'>Plant based</p>
+                <p className='z-2 ml-auto xl:ml-80 text-[10px] font-normal text-tintFont whitespace-nowrap'>Mint Enhanced</p>
+                <p className='z-2 ml-auto xl:ml-80 text-[10px] font-normal text-tintFont whitespace-nowrap'>Liquid Fill 2-  in -1 Technology</p>
 
               </div>
               </div>
@@ -156,7 +156,7 @@ const CapsuleSection = () => {
 
             </div>
       </div>
-      <div className='sm:1/3 md:h-1/2 lg:h-2/3 xl:h-5/6 2xl:h-5/6 mt-20'>
+      <div className='sm:h-1/2 md:h-1/2 lg:h-2/3 xl:h-5/6 2xl:h-5/6 mt-10 xl:mt-20'>
       <div className='md:place-content-center sm:place-content-center'>
         <animated.div className='flex flex-row 2xl:place-content-end lg:place-content-end xl:place-content-end' style={ltf} on id='crvTrigger'>
           <div className='eclip1 lg:w-80 md:w-60 sm:w-44 2xl:w-96 xl:w-96 mx-5 mr-16'  id='crvTrigger-element'>
@@ -171,14 +171,14 @@ const CapsuleSection = () => {
       </div>
 
 
-        <div className='md:place-content-center sm:place-content-center sm:ml-0 md:ml-0 ml-40'>
+        <div className='md:place-content-center sm:place-content-center sm:ml-0 md:ml-0 sm:ml-10 xl:ml-40'>
           <animated.div className='flex flex-row' style={rtl} id='crvTrigger'>
             <div className='eclip1 lg:w-80 md:w-60 sm:w-44 2xl:w-96 xl:w-96 mt-40 mx-5 sm:ml-0 md:ml-0 2xl:ml-32 lg:ml-28 xl:ml-32' id='crvTrigger-element'>
               <span className='flex flex-row'>
                 <img src={Time1} width={'10%'} className='h-6 mx-3'/>
                 <p className='text-tintFont sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold tracking-wider'>Delayed Release Technology</p>
               </span>
-                <p className='text-Font text-[11px] font-semibold mt-1 mx-2 tracking-wider'>Our delayed-release capsules dissolve in the small intestine, where nutrient absorption is most effective.</p>
+                <p className='text-tintFont text-[11px] font-semibold mt-1 mx-2 tracking-wider'>Our delayed-release capsules dissolve in the small intestine, where nutrient absorption is most effective.</p>
             </div>
           </animated.div>
           <div ref={triggerRef} />
@@ -187,7 +187,7 @@ const CapsuleSection = () => {
 
         <div className='md:place-content-center sm:place-content-center'>
           <animated.div className='flex flex-row 2xl:place-content-end lg:place-content-end xl:place-content-end ml-3' style={ltf} id='crvTrigger'>
-            <div className='eclip1 lg:w-80 md:w-60 sm:w-44 2xl:w-96 xl:w-96 mt-72 mx-6 mr-56' id='crvTrigger-element'>
+            <div className='eclip1 lg:w-80 md:w-60 sm:w-44 2xl:w-96 xl:w-96 mt-72 xl:mt-72 mx-6 xl:mr-56' id='crvTrigger-element'>
               <span className='flex flex-row' id=''>
                 <img src={Cap2} width={'15%'} className='h-6 mx-1'/>
                 <p className='text-tintFont sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold tracking-wider'>Liquid Fill Encapsulation with VFILL™ Technology</p>

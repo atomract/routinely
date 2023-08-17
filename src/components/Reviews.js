@@ -2,7 +2,7 @@ const ReviewPage = () => {
     return(
         <div className="flex h-96 py-5 flex-row bg-bgFontLt">
             <div className="flex-none">
-                <div className="flex py-20 px-28">
+                <div className="flex py-20 xl:px-28">
                     <svg xmlns="http://www.w3.org/2000/svg" width="39" height="34" viewBox="0 0 39 34" fill="none">
                         <path d="M19.1494 7.08331L19.1494 27.625" stroke="#214E6A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M29.1426 15C24.8596 15 19.149 7 19.149 7C19.149 7 13.4383 15 9.15529 15" stroke="#214E6A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -10,7 +10,7 @@ const ReviewPage = () => {
                 </div>
             </div>
             <div className="flex-1 w-80 py-10">
-                <div className="flex bg-whiteFont rounded-3xl px-10 py-7 flex-col">
+                <div className="flex bg-whiteFont rounded-3xl px-2 xl:px-10 xl:py-7 flex-col">
                     <div className="flex my-2">
                         <p className="text-2xl text-tintFont">Jhone Lown</p>
                     </div>
@@ -36,15 +36,15 @@ const ReviewPage = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex-1 w-20 py-10 ">
-                <div className="flex flex-col px-24">
+            <div className="flex-1 w-20 py-8 xl:py-10 ">
+                <div className="flex flex-col px-5 xl:px-24">
                     <div className="flex my-5">
-                        <p className="text-tintFont text-wrap font-bold text-3xl">
+                        <p className="text-tintFont text-wrap font-bold text-lg xl:text-3xl">
                             Testimonials Customers
                         </p>
                     </div>
                     <div className="flex">
-                        <p className="text-tintFontLt">What our customers have to say about our service, check below!</p>
+                        <p className="text-tintFontLt xl:text-base text-sm">What our customers have to say about our service, check below!</p>
                     </div>
                 </div>
             </div>
