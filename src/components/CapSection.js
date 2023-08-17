@@ -156,9 +156,9 @@ const CapsuleSection = () => {
 
             </div>
       </div>
-      <div className='sm:h-1/2 md:h-1/2 lg:h-2/3 xl:h-5/6 2xl:h-5/6 mt-10 xl:mt-20'>
-      <div className='md:place-content-center sm:place-content-center'>
-        <animated.div className='flex flex-row 2xl:place-content-end lg:place-content-end xl:place-content-end' style={ltf} on id='crvTrigger'>
+      <div className=' md:h-1/2 lg:h-2/3 xl:h-5/6 2xl:h-5/6 mt-10 xl:mt-20'>
+      <div className='md:place-content-center '>
+        <animated.div className='flex flex-row my-5 xl:my-0 2xl:place-content-end lg:place-content-end xl:place-content-end' style={ltf} on id='crvTrigger'>
           <div className='eclip1 lg:w-80 md:w-60 sm:w-44 2xl:w-96 xl:w-96 mx-5 mr-16'  id='crvTrigger-element'>
             <span className='flex flex-row'>
               <img src={Cap1} width={'10%'} className='h-7 mt-3'/>
@@ -171,9 +171,9 @@ const CapsuleSection = () => {
       </div>
 
 
-        <div className='md:place-content-center sm:place-content-center sm:ml-0 md:ml-0 sm:ml-10 xl:ml-40'>
-          <animated.div className='flex flex-row' style={rtl} id='crvTrigger'>
-            <div className='eclip1 lg:w-80 md:w-60 sm:w-44 2xl:w-96 xl:w-96 mt-40 mx-5 sm:ml-0 md:ml-0 2xl:ml-32 lg:ml-28 xl:ml-32' id='crvTrigger-element'>
+        <div className='md:place-content-center sm:place-content-center md:ml-0 xl:ml-40'>
+          <animated.div className='flex flex-row my-5 xl:my-auto' style={rtl} id='crvTrigger'>
+            <div className='eclip1 lg:w-80 md:w-60 sm:w-44 2xl:w-96 xl:w-96 mt-40 mx-5 ml-3 md:ml-0 2xl:ml-32 lg:ml-28 xl:ml-32' id='crvTrigger-element'>
               <span className='flex flex-row'>
                 <img src={Time1} width={'10%'} className='h-6 mx-3'/>
                 <p className='text-tintFont sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold tracking-wider'>Delayed Release Technology</p>
@@ -186,8 +186,8 @@ const CapsuleSection = () => {
 
 
         <div className='md:place-content-center sm:place-content-center'>
-          <animated.div className='flex flex-row 2xl:place-content-end lg:place-content-end xl:place-content-end ml-3' style={ltf} id='crvTrigger'>
-            <div className='eclip1 lg:w-80 md:w-60 sm:w-44 2xl:w-96 xl:w-96 mt-72 xl:mt-72 mx-6 xl:mr-56' id='crvTrigger-element'>
+          <animated.div className='flex flex-row 2xl:place-content-end lg:place-content-end xl:place-content-end ml-0 xl:ml-3' style={ltf} id='crvTrigger'>
+            <div className='eclip1 lg:w-80 md:w-60 sm:w-44 2xl:w-96 xl:w-96 mt-72 xl:mt-72 mx-2 xl:mx-6 xl:mr-56' id='crvTrigger-element'>
               <span className='flex flex-row' id=''>
                 <img src={Cap2} width={'15%'} className='h-6 mx-1'/>
                 <p className='text-tintFont sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold tracking-wider'>Liquid Fill Encapsulation with VFILL™ Technology</p>
