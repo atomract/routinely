@@ -12,7 +12,7 @@ const Footer = () => {
                                     <p className="text-tintFont text-sm xl:text-lg xl:font-bold text-center py-5"> Subscribe to get information, latest news and other
         interesting offers about agency</p>
                                 </div>
-                                <div className="flex flex-row 2xl:my-5 xl:my-5">
+                                <div className="flex flex-row 2xl:my-5 xl:my-1">
                                     <div className="flex mx-6">
                                         <input type="text" className="rounded-lg w-28 xl:w-[20rem] 2xl:w-[20rem] border-[1px]"/>
                                     </div>
