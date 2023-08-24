@@ -54,7 +54,7 @@ const SliderSection = () => {
 
     return (
         <>
-            <div className="e152 z-0 sm:h-[37rem] sm:w-[20rem] md:h-[61rem] md:w-[52rem] xl:h-[40rem] xl:w-[80rem] xl:h-[61rem] xl:w-[80rem] 2xl:h-[67rem] 2xl:w-[88rem] xl:shrink-0 "  >
+            <div className="e152 z-0 sm:h-[37rem] sm:w-[20rem] md:h-[61rem] md:w-[52rem] xl:h-[61rem] xl:w-[80rem] xl:h-[61rem] xl:w-[80rem] 2xl:h-[67rem] 2xl:w-[88rem] xl:shrink-0 "  >
                 <div className='py-60 sm:py-auto '>
                     <div className='flex flex-col'>
                         <div className='flex flex-row md:p-6 xl:p-10'>
