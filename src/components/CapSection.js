@@ -99,7 +99,7 @@ const CapsuleSection = () => {
     return (
       <div className=''>
           <div className='place-content-center'>
-            <div className='contentBox h-[32rem] md:h-[35rem] lg:h-[36rem] xl:h-[44rem] 2xl:h-[52rem]'>
+            <div className='contentBox h-[36rem] md:h-[36rem] lg:h-[36rem] xl:h-[44rem] 2xl:h-[52rem]'>
             <img className='eclip p-32 md:p-36 lg:p-44 xl:p-52 2xl:p-64 mb-36' />
             {/* <div onMouseMove={handleMouseMove} style={{
                 backgroundPositionX: bgX
@@ -158,8 +158,8 @@ const CapsuleSection = () => {
       </div>
       <div className=' md:h-1/2 lg:h-2/3 xl:h-5/6 2xl:h-5/6 mt-10 xl:mt-20'>
       <div className='md:place-content-center '>
-        <animated.div className='flex flex-row my-5 xl:my-0 2xl:place-content-end lg:place-content-end xl:place-content-end' style={ltf} on id='crvTrigger'>
-          <div className='eclip1 lg:w-80 md:w-60 sm:w-44 2xl:w-96 xl:w-96 mx-5 mr-16'  id='crvTrigger-element'>
+        <animated.div className='flex flex-row my-5 xl:my-0 2xl:place-content-end  md:place-content-end lg:place-content-end xl:place-content-end' style={ltf} on id='crvTrigger'>
+          <div className='eclip1 lg:w-96 md:w-72 sm:w-44 2xl:w-96 xl:w-96 mx-5 mr-16'  id='crvTrigger-element'>
             <span className='flex flex-row'>
               <img src={Cap1} width={'10%'} className='h-7 mt-3'/>
               <p className='text-tintFont sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold tracking-wider'>Unique Capsule in Capsule, 2-IN-1 Technology</p>
@@ -171,9 +171,9 @@ const CapsuleSection = () => {
       </div>
 
 
-        <div className='md:place-content-center sm:place-content-center md:ml-0 xl:ml-40'>
+        <div className='md:place-content-center sm:place-content-center md:ml-20 xl:ml-40'>
           <animated.div className='flex flex-row my-5 xl:my-auto' style={rtl} id='crvTrigger'>
-            <div className='eclip1 lg:w-80 md:w-60 sm:w-44 2xl:w-96 xl:w-96 mt-40 mx-5 ml-3 md:ml-0 2xl:ml-32 lg:ml-28 xl:ml-32' id='crvTrigger-element'>
+            <div className='eclip1 lg:w-80 md:w-60 sm:w-44 2xl:w-96 xl:w-96 mt-40 mx-5 ml-3 md:ml-20 2xl:ml-32 lg:ml-28 xl:ml-32' id='crvTrigger-element'>
               <span className='flex flex-row'>
                 <img src={Time1} width={'10%'} className='h-6 mx-3'/>
                 <p className='text-tintFont sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold tracking-wider'>Delayed Release Technology</p>
@@ -185,8 +185,8 @@ const CapsuleSection = () => {
         </div>
 
 
-        <div className='md:place-content-center sm:place-content-center'>
-          <animated.div className='flex flex-row 2xl:place-content-end lg:place-content-end xl:place-content-end ml-0 xl:ml-3' style={ltf} id='crvTrigger'>
+        <div className=' sm:place-content-center'>
+          <animated.div className='flex flex-row 2xl:place-content-end md:place-content-end lg:place-content-end xl:place-content-end ml-0 xl:ml-3' style={ltf} id='crvTrigger'>
             <div className='eclip1 lg:w-80 md:w-60 sm:w-44 2xl:w-96 xl:w-96 mt-72 xl:mt-72 mx-2 xl:mx-6 xl:mr-56' id='crvTrigger-element'>
               <span className='flex flex-row' id=''>
                 <img src={Cap2} width={'15%'} className='h-6 mx-1'/>

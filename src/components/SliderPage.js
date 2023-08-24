@@ -54,18 +54,18 @@ const SliderSection = () => {
 
     return (
         <>
-            <div className="e152 z-0 sm:h-[37rem] sm:w-[20rem] xl:h-[61rem] xl:w-[80rem] 2xl:h-[67rem] 2xl:w-[88rem] xl:shrink-0 "  >
+            <div className="e152 z-0 sm:h-[37rem] sm:w-[20rem] md:h-[61rem] md:w-[52rem] xl:h-[40rem] xl:w-[80rem] xl:h-[61rem] xl:w-[80rem] 2xl:h-[67rem] 2xl:w-[88rem] xl:shrink-0 "  >
                 <div className='py-60 sm:py-auto '>
                     <div className='flex flex-col'>
-                        <div className='flex flex-row xl:p-10'>
+                        <div className='flex flex-row md:p-6 xl:p-10'>
                             {
                                 images.map((e, k)=> {
                                     return (
-                                        <div className='flex flex-col  sm:px-1 xl:px-6'>
+                                        <div className='flex flex-col md:px-3 sm:px-1 xl:px-6'>
                                             <div className={`${k===idx ? "xl:px-10 sm:px-6" : null}`}>
                                                 {k===idx ? 
                                                 <ImageList srcPath={e.path} idx={k}/>
-                                                    : <img className='xl:h-52 sm:h-12 sm:w-7 z-5 xl:w-44 rounded-3xl opacity-70' src={e.path}/>
+                                                    : <img className='xl:h-52 sm:h-12 sm:w-7 md:h-36 md:w-28 z-5 xl:w-44 rounded-3xl opacity-70' src={e.path}/>
                                             }
                                              {/* /   <ImageList srcPath={e.path} ky={k} idx={idx}/> */}
                                             </div>

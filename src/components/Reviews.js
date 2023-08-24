@@ -1,6 +1,6 @@
 const ReviewPage = () => {
     return(
-        <div className="flex h-96 py-5 flex-row bg-bgFontLt">
+        <div className="flex h-auto flex-row bg-bgFontLt">
             <div className="flex-none">
                 <div className="flex py-20 xl:px-28">
                     <svg xmlns="http://www.w3.org/2000/svg" width="39" height="34" viewBox="0 0 39 34" fill="none">
