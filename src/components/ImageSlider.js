@@ -18,10 +18,10 @@ const ImageList = ({srcPath, idx, ky}) => {
       <div>
         <div >
           {transitions((style, i) => (
-            <div className='xl:mt-12 md:mt-8' key={i} >
+            <div className='xl:mt-12  2xl:mt-16 md:mt-8' key={i} >
               <animated.img
                 src={srcPath}
-                className={'sm:h-28 sm:w-12 md:h-36 md:w-28 xl:h-52 z-5 xl:w-44 rounded-3xl'}
+                className={'sm:h-28 sm:w-12 md:h-36 md:w-28  2xl:h-72 2xl:w-60 xl:h-52 z-5 xl:w-44 rounded-3xl'}
                 style={{ ...style }}
               />
             </div>

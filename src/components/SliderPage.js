@@ -54,18 +54,18 @@ const SliderSection = () => {
 
     return (
         <>
-            <div className="e152 z-0 sm:h-[37rem] sm:w-[20rem] md:h-[61rem] md:w-[52rem] xl:h-[61rem] xl:w-[80rem] xl:h-[61rem] xl:w-[80rem] 2xl:h-[67rem] 2xl:w-[88rem] xl:shrink-0 "  >
-                <div className='py-60 sm:py-auto '>
+            <div className="e152 z-0 sm:h-[37rem] sm:w-[20rem] md:h-[61rem] md:w-[52rem] flex xl:h-[61rem] xl:w-[80rem] 2xl:h-[90rem]  2xl:w-screen xl:shrink-0 "  >
+                <div className='py-60 2xl:py-80 sm:py-auto '>
                     <div className='flex flex-col'>
-                        <div className='flex flex-row md:p-6 xl:p-10'>
+                        <div className='flex flex-row 2xl:p-20 md:p-6 xl:p-10'>
                             {
                                 images.map((e, k)=> {
                                     return (
                                         <div className='flex flex-col md:px-3 sm:px-1 xl:px-6'>
-                                            <div className={`${k===idx ? "xl:px-10 sm:px-6" : null}`}>
+                                            <div className={`${k===idx ? "xl:px-10  2xl:px-20 sm:px-6" : null}`}>
                                                 {k===idx ? 
                                                 <ImageList srcPath={e.path} idx={k}/>
-                                                    : <img className='xl:h-52 sm:h-12 sm:w-7 md:h-36 md:w-28 z-5 xl:w-44 rounded-3xl opacity-70' src={e.path}/>
+                                                    : <img className='xl:h-52 2xl:h-72 2xl:w-60 sm:h-12 sm:w-7 md:h-36 md:w-28 z-5 xl:w-44 rounded-3xl opacity-70' src={e.path}/>
                                             }
                                              {/* /   <ImageList srcPath={e.path} ky={k} idx={idx}/> */}
                                             </div>
@@ -76,7 +76,7 @@ const SliderSection = () => {
                         </div>
                         <div className='mt-12'>
 
-                            <div className='flex place-content-center xl:py-6 sm:py-auto flex-row'>
+                            <div className='flex place-content-center 2xl:py-16 xl:py-6 sm:py-auto flex-row'>
                                 <button className='flex xl:p-10 p-3 sm:py-10' onClick={decIdx}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
                                         <path d="M23.5529 14.3779L16.4219 20.8036C16.2882 20.9231 16.1821 21.0652 16.1097 21.2218C16.0373 21.3784 16 21.5464 16 21.716C16 21.8857 16.0373 22.0537 16.1097 22.2103C16.1821 22.3669 16.2882 22.509 16.4219 22.6285L23.5529 29.0541C23.6855 29.1746 23.8432 29.2702 24.017 29.3355C24.1908 29.4007 24.3772 29.4343 24.5655 29.4343C24.7538 29.4343 24.9402 29.4007 25.114 29.3355C25.2878 29.2702 25.4455 29.1746 25.5781 29.0541C25.7118 28.9347 25.8179 28.7925 25.8903 28.6359C25.9627 28.4793 26 28.3114 26 28.1417C26 27.972 25.9627 27.8041 25.8903 27.6475C25.8179 27.4909 25.7118 27.3487 25.5781 27.2293L19.4454 21.716L25.5781 16.2028C25.8467 15.9608 25.9976 15.6326 25.9976 15.2904C25.9976 15.1209 25.9605 14.9531 25.8886 14.7966C25.8166 14.64 25.7111 14.4978 25.5781 14.3779C25.3096 14.136 24.9453 14 24.5655 14C24.3775 14 24.1912 14.0334 24.0175 14.0982C23.8438 14.1631 23.6859 14.2581 23.5529 14.3779Z" fill="white"/>
@@ -84,8 +84,8 @@ const SliderSection = () => {
                                     </svg>
                                 </button>
                                 <div className='flex flex-col  place-content-center'>
-                                    <p className='font-bold text-whiteFont self-center xl:text-4xl sm:text-xl'>{images[idx].head}</p>
-                                    <p className='font-normal text-whiteFont text-center xl:w-[32rem] sm:w-[28rem] sm:text-xs xl:text-base'>{images[idx].about}</p>
+                                    <p className='font-bold text-whiteFont self-center xl:text-4xl 2xl:text-5xl sm:text-xl'>{images[idx].head}</p>
+                                    <p className='font-normal text-whiteFont text-center xl:w-[32rem] 2xl:text-xl 2xl:w-[40rem] sm:w-[28rem] sm:text-xs xl:text-base'>{images[idx].about}</p>
                                 </div>
                                 <button className='flex xl:p-10 p-3 sm:py-10' onClick={incIdx}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">

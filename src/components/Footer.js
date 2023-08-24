@@ -70,30 +70,30 @@ const Footer = () => {
                                 </svg>
                             </div>
                         </div>
-                        <div className="flex w-screen flex-row my-10 xl:my-5 2xl:my-5 ">
+                        <div className="flex w-screen flex-row my-10 xl:my-5 2xl:my-5 2xl:my-24 ">
                             <div className="flex flex-row w-1/8 md:w-1/6 xl:w-1/6 2xl:w-1/6">
                                 <div className="flex">
-                                    <p className="text-whiteFont mx-3 font-medium md:text-xl text-xl xl:text-2xl 2xl:text-2xl">routinely</p>
+                                    <p className="text-whiteFont mx-3 font-medium md:text-xl text-xl xl:text-2xl 2xl:text-4xl">routinely</p>
                                 </div>
                             </div>
                             <div className="flex flex-row xl:w-4/5 2xl:w-4/5">
                                 <div className="flex mx-2 xl:mx-6 md:mx-3 2xl:mx-6">
-                                    <p className="text-whiteFont font-normal text-xs">Contact Us</p>
+                                    <p className="text-whiteFont 2xl:text-base font-normal text-xs">Contact Us</p>
                                 </div>
                                 <div className="flex xl:mx-6 md:mx-3 2xl:mx-6">
-                                    <p className="text-whiteFont font-normal text-xs">Privacy Policy</p>
+                                    <p className="text-whiteFont 2xl:text-base font-normal text-xs">Privacy Policy</p>
                                 </div>
                                 <div className="flex xl:mx-6 md:mx-3 2xl:mx-6">
-                                    <p className="text-whiteFont font-normal text-xs">Your Order</p>
+                                    <p className="text-whiteFont 2xl:text-base font-normal text-xs">Your Order</p>
                                 </div>
                                 <div className="flex xl:mx-6 md:mx-3 2xl:mx-6">
-                                    <p className="text-whiteFont font-normal text-xs">Refund & Cancellation</p>
+                                    <p className="text-whiteFont 2xl:text-base font-normal text-xs">Refund & Cancellation</p>
                                 </div>
                                 <div className="flex xl:mx-6 md:mx-3 2xl:mx-6">
-                                    <p className="text-whiteFont font-normal text-xs">Terms & Conditions</p>
+                                    <p className="text-whiteFont 2xl:text-base font-normal text-xs">Terms & Conditions</p>
                                 </div>
                                 <div className="flex xl:mx-6 md:mx-3 2xl:mx-6">
-                                    <p className="text-whiteFont font-normal text-xs">FAQs</p>
+                                    <p className="text-whiteFont 2xl:text-base font-normal text-xs">FAQs</p>
                                 </div>
                             </div>
                         </div>
@@ -101,7 +101,7 @@ const Footer = () => {
             </div>
             <div className="bg-whiteFont flex w-screen flex-row place-content-center">
                 <div className="flex">
-                    <p className="text-center text-sm mb-2 text-tintFont">© 2023 routinely, All Rights Reserved</p>
+                    <p className="text-center text-sm mb-2 2xl:text-base text-tintFont">© 2023 routinely, All Rights Reserved</p>
                 </div>
             </div>
         </div>

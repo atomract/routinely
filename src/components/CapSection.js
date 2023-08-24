@@ -158,13 +158,13 @@ const CapsuleSection = () => {
       </div>
       <div className=' md:h-1/2 lg:h-2/3 xl:h-5/6 2xl:h-5/6 mt-10 xl:mt-20'>
       <div className='md:place-content-center '>
-        <animated.div className='flex flex-row my-5 xl:my-0 2xl:place-content-end  md:place-content-end lg:place-content-end xl:place-content-end' style={ltf} on id='crvTrigger'>
+        <animated.div className='flex flex-row my-5  2xl:mr-40 xl:my-0 2xl:place-content-end  md:place-content-end lg:place-content-end xl:place-content-end' style={ltf} on id='crvTrigger'>
           <div className='eclip1 lg:w-96 md:w-72 sm:w-44 2xl:w-96 xl:w-96 mx-5 mr-16'  id='crvTrigger-element'>
             <span className='flex flex-row'>
               <img src={Cap1} width={'10%'} className='h-7 mt-3'/>
               <p className='text-tintFont sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold tracking-wider'>Unique Capsule in Capsule, 2-IN-1 Technology</p>
             </span>
-              <p className='text-tintFont text-[11px] font-semibold mt-1 tracking-wider'>Our trademarked technology combines oily and dry ingredients in a single capsule, including incompatible ingredients like Fat and Water soluble Vitamins and Minerals. Intake all key nutrients with just 1 pill a day.</p>
+              <p className='text-tintFont text-[11px] 2xl:text-base font-semibold mt-1 tracking-wider'>Our trademarked technology combines oily and dry ingredients in a single capsule, including incompatible ingredients like Fat and Water soluble Vitamins and Minerals. Intake all key nutrients with just 1 pill a day.</p>
           </div>
         </animated.div>
         <div ref={triggerRef} />
@@ -178,7 +178,7 @@ const CapsuleSection = () => {
                 <img src={Time1} width={'10%'} className='h-6 mx-3'/>
                 <p className='text-tintFont sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold tracking-wider'>Delayed Release Technology</p>
               </span>
-                <p className='text-tintFont text-[11px] font-semibold mt-1 mx-2 tracking-wider'>Our delayed-release capsules dissolve in the small intestine, where nutrient absorption is most effective.</p>
+                <p className='text-tintFont text-[11px]  2xl:text-base font-semibold mt-1 mx-2 tracking-wider'>Our delayed-release capsules dissolve in the small intestine, where nutrient absorption is most effective.</p>
             </div>
           </animated.div>
           <div ref={triggerRef} />
@@ -192,7 +192,7 @@ const CapsuleSection = () => {
                 <img src={Cap2} width={'15%'} className='h-6 mx-1'/>
                 <p className='text-tintFont sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold tracking-wider'>Liquid Fill Encapsulation with VFILL™ Technology</p>
               </span>
-                <p className='text-tintFont text-[11px] font-semibold mt-1 mx-2 tracking-wider'>Our delayed-release capsules dissolve in the small intestine, where nutrient absorption is most effective.</p>
+                <p className='text-tintFont text-[11px]  2xl:text-base font-semibold mt-1 mx-2 tracking-wider'>Our delayed-release capsules dissolve in the small intestine, where nutrient absorption is most effective.</p>
             </div>
           </animated.div>
           <div ref={triggerRef} />

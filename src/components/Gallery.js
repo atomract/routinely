@@ -13,11 +13,11 @@ const GalleryPage = () => {
         <div className='flex flex-col xl:mt-20'>
             <div className='place-content-center flex'>
                 <div className='flex flex-col '>
-                    <p className='text-lg text-tintFont text-semibold'>Share your routinely Status with us</p>
+                    <p className='text-lg text-tintFont 2xl:text-xl text-semibold'>Share your routinely Status with us</p>
                     {" "}
                     <div className='flex place-content-center'>
 
-                    <p className='text-2xl text-tintFont font-bold'>#HealthyYou</p>
+                    <p className='text-2xl text-tintFont 2xl:text-4xl 2xl:mt-5 font-bold'>#HealthyYou</p>
                     </div>
                 </div>
             </div>

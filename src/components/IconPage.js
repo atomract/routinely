@@ -14,7 +14,7 @@ const IconPage = () => {
                         </svg>
                     </div>
                     <div className="flex place-content-center">
-                        <p className="text-center text-[6px] md:text-sm xl:text-base">Scientifically Backed</p>
+                        <p className="text-center text-[6px] md:text-sm 2xl:text-xl xl:text-base">Scientifically Backed</p>
                     </div>
                 </div>
                 <div className="flex sm:py-20 sm:px-5 md:py-10 xl:py-20 md:px-2 xl:px-10 flex-col text-xs">
@@ -32,7 +32,7 @@ const IconPage = () => {
                         </svg>
                     </div>
                     <div className="flex place-content-center">
-                        <p className="text-center text-[6px] md:text-sm xl:text-base">Cruelty Free</p>
+                        <p className="text-center text-[6px] md:text-sm 2xl:text-xl xl:text-base">Cruelty Free</p>
                     </div>
                 </div>
                 <div className="flex sm:py-20 sm:px-5 md:py-10 xl:py-20 md:px-2 xl:px-10 flex-col text-xs">
@@ -50,7 +50,7 @@ const IconPage = () => {
                         </svg>
                     </div>
                     <div className="flex place-content-center">
-                        <p className="text-center text-[6px] md:text-sm xl:text-base">Major Allergen Free</p>
+                        <p className="text-center text-[6px] md:text-sm 2xl:text-xl xl:text-base">Major Allergen Free</p>
                     </div>
                 </div>
                 <div className="flex sm:py-20 sm:px-5 md:py-10 xl:py-20 md:px-2 xl:px-10 flex-col text-xs">
@@ -68,7 +68,7 @@ const IconPage = () => {
                         </svg>
                     </div>
                     <div className="flex place-content-center">
-                        <p className="text-center text-[6px] md:text-sm xl:text-base">No Sweetners</p>
+                        <p className="text-center text-[6px] md:text-sm 2xl:text-xl xl:text-base">No Sweetners</p>
                     </div>
                 </div>
                 <div className="flex sm:py-20 sm:px-5 md:py-10 xl:py-20 md:px-2 xl:px-10 flex-col text-xs">
@@ -79,7 +79,7 @@ const IconPage = () => {
                         </svg>
                     </div>
                     <div className="flex place-content-center">
-                        <p className="text-center text-[6px] md:text-sm xl:text-base">Vegetarian and Plant Based</p>
+                        <p className="text-center text-[6px] md:text-sm 2xl:text-xl xl:text-base">Vegetarian and Plant Based</p>
                     </div>
                 </div>
                 <div className="flex sm:py-20 sm:px-5 md:py-10 xl:py-20 md:px-2 xl:px-10 flex-col text-xs">
@@ -97,7 +97,7 @@ const IconPage = () => {
                         </svg>
                     </div>
                     <div className="flex place-content-center">
-                        <p className="text-center text-[6px] md:text-sm xl:text-base">Delayed-Release Capsule Design</p>
+                        <p className="text-center text-[6px] md:text-sm 2xl:text-xl xl:text-base">Delayed-Release Capsule Design</p>
                     </div>
                 </div>
                 <div className="flex sm:py-20 sm:px-5 md:py-10 xl:py-20 md:px-2 xl:px-10 flex-col text-xs">
@@ -112,7 +112,7 @@ const IconPage = () => {
                         </svg>
                     </div>
                     <div className="flex place-content-center">
-                        <p className="text-center text-[6px] md:text-sm xl:text-base">Non-GMO</p>
+                        <p className="text-center text-[6px] md:text-sm 2xl:text-xl xl:text-base">Non-GMO</p>
                     </div>
                 </div>
                 <div className="flex sm:py-20 sm:px-5 md:py-10 xl:py-20 md:px-2 xl:px-10 flex-col text-xs">
@@ -127,7 +127,7 @@ const IconPage = () => {
                         </svg>
                     </div>
                     <div className="flex place-content-center">
-                        <p className="text-center text-[6px] md:text-sm xl:text-base">No Artificial Colorants</p>
+                        <p className="text-center text-[6px] md:text-sm 2xl:text-xl xl:text-base">No Artificial Colorants</p>
                     </div>
                 </div>
 
